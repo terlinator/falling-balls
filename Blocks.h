@@ -6,6 +6,9 @@ class block(){
   int x, y;
   
   public:
+  createBlock();
+  createBlock(int, int);
 
+  moveBlock();
   
 }
