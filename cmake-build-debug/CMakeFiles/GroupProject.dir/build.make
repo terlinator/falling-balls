@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ari/Desktop/SDL_Plotter
+CMAKE_SOURCE_DIR = /Users/ari/Desktop/Projects/SDL_Plotter
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ari/Desktop/SDL_Plotter/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GroupProject.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/GroupProject.dir/progress.make
 include CMakeFiles/GroupProject.dir/flags.make
 
 CMakeFiles/GroupProject.dir/main.cpp.o: CMakeFiles/GroupProject.dir/flags.make
-CMakeFiles/GroupProject.dir/main.cpp.o: /Users/ari/Desktop/SDL_Plotter/main.cpp
+CMakeFiles/GroupProject.dir/main.cpp.o: /Users/ari/Desktop/Projects/SDL_Plotter/main.cpp
 CMakeFiles/GroupProject.dir/main.cpp.o: CMakeFiles/GroupProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GroupProject.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupProject.dir/main.cpp.o -MF CMakeFiles/GroupProject.dir/main.cpp.o.d -o CMakeFiles/GroupProject.dir/main.cpp.o -c /Users/ari/Desktop/SDL_Plotter/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GroupProject.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupProject.dir/main.cpp.o -MF CMakeFiles/GroupProject.dir/main.cpp.o.d -o CMakeFiles/GroupProject.dir/main.cpp.o -c /Users/ari/Desktop/Projects/SDL_Plotter/main.cpp
 
 CMakeFiles/GroupProject.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ari/Desktop/SDL_Plotter/main.cpp > CMakeFiles/GroupProject.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ari/Desktop/Projects/SDL_Plotter/main.cpp > CMakeFiles/GroupProject.dir/main.cpp.i
 
 CMakeFiles/GroupProject.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ari/Desktop/SDL_Plotter/main.cpp -o CMakeFiles/GroupProject.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ari/Desktop/Projects/SDL_Plotter/main.cpp -o CMakeFiles/GroupProject.dir/main.cpp.s
 
 CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o: CMakeFiles/GroupProject.dir/flags.make
-CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o: /Users/ari/Desktop/SDL_Plotter/SDL_Plotter.cpp
+CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o: /Users/ari/Desktop/Projects/SDL_Plotter/SDL_Plotter.cpp
 CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o: CMakeFiles/GroupProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o -MF CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o.d -o CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o -c /Users/ari/Desktop/SDL_Plotter/SDL_Plotter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o -MF CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o.d -o CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o -c /Users/ari/Desktop/Projects/SDL_Plotter/SDL_Plotter.cpp
 
 CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ari/Desktop/SDL_Plotter/SDL_Plotter.cpp > CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ari/Desktop/Projects/SDL_Plotter/SDL_Plotter.cpp > CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.i
 
 CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ari/Desktop/SDL_Plotter/SDL_Plotter.cpp -o CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ari/Desktop/Projects/SDL_Plotter/SDL_Plotter.cpp -o CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.s
 
 # Object files for target GroupProject
 GroupProject_OBJECTS = \
@@ -109,7 +109,7 @@ GroupProject: CMakeFiles/GroupProject.dir/main.cpp.o
 GroupProject: CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o
 GroupProject: CMakeFiles/GroupProject.dir/build.make
 GroupProject: CMakeFiles/GroupProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable GroupProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable GroupProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GroupProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/GroupProject.dir/clean:
 .PHONY : CMakeFiles/GroupProject.dir/clean
 
 CMakeFiles/GroupProject.dir/depend:
-	cd /Users/ari/Desktop/SDL_Plotter/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ari/Desktop/SDL_Plotter /Users/ari/Desktop/SDL_Plotter /Users/ari/Desktop/SDL_Plotter/cmake-build-debug /Users/ari/Desktop/SDL_Plotter/cmake-build-debug /Users/ari/Desktop/SDL_Plotter/cmake-build-debug/CMakeFiles/GroupProject.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ari/Desktop/Projects/SDL_Plotter /Users/ari/Desktop/Projects/SDL_Plotter /Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug /Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug /Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/CMakeFiles/GroupProject.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GroupProject.dir/depend
 

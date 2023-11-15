@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "GroupProject::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-GroupProject-Debug-8dc7190da5240db0f9b3.json",
+					"jsonFile" : "target-GroupProject-Debug-3929dc6ae3bba816dfcc.json",
 					"name" : "GroupProject",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/ari/Desktop/SDL_Plotter/cmake-build-debug",
-		"source" : "/Users/ari/Desktop/SDL_Plotter"
+		"build" : "/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug",
+		"source" : "/Users/ari/Desktop/Projects/SDL_Plotter"
 	},
 	"version" : 
 	{

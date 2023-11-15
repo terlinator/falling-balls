@@ -8,88 +8,88 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/ari/Desktop/SDL_Plotter/cmake-build-debug"/>
+				<Option working_dir="/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GroupProject">
-				<Option output="/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/GroupProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ari/Desktop/SDL_Plotter/cmake-build-debug"/>
+				<Option output="/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/GroupProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GroupProject/fast">
-				<Option output="/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/GroupProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ari/Desktop/SDL_Plotter/cmake-build-debug"/>
+				<Option output="/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/GroupProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/ari/Desktop/SDL_Plotter/cmake-build-debug"/>
+				<Option working_dir="/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/ari/Desktop/SDL_Plotter/cmake-build-debug"/>
+				<Option working_dir="/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ari/Desktop/SDL_Plotter/SDL_Plotter.cpp">
+		<Unit filename="/Users/ari/Desktop/Projects/SDL_Plotter/SDL_Plotter.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="/Users/ari/Desktop/SDL_Plotter/SDL_Plotter.h">
+		<Unit filename="/Users/ari/Desktop/Projects/SDL_Plotter/SDL_Plotter.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="/Users/ari/Desktop/SDL_Plotter/main.cpp">
+		<Unit filename="/Users/ari/Desktop/Projects/SDL_Plotter/main.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="/Users/ari/Desktop/SDL_Plotter/CMakeLists.txt">
+		<Unit filename="/Users/ari/Desktop/Projects/SDL_Plotter/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

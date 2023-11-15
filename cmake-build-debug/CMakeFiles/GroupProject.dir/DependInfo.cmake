@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/ari/Desktop/SDL_Plotter/SDL_Plotter.cpp" "CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o" "gcc" "CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o.d"
-  "/Users/ari/Desktop/SDL_Plotter/main.cpp" "CMakeFiles/GroupProject.dir/main.cpp.o" "gcc" "CMakeFiles/GroupProject.dir/main.cpp.o.d"
+  "/Users/ari/Desktop/Projects/SDL_Plotter/SDL_Plotter.cpp" "CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o" "gcc" "CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o.d"
+  "/Users/ari/Desktop/Projects/SDL_Plotter/main.cpp" "CMakeFiles/GroupProject.dir/main.cpp.o" "gcc" "CMakeFiles/GroupProject.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
