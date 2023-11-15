@@ -34,11 +34,11 @@ int main(int argc, char ** argv)
             drawCircle(p, size, c, g);
         }
         g.update();
-
+        
     }
 }
 
-//This is epic!
+
 void drawCircle(point loc, int size, color c, SDL_Plotter& g){
     for(double i = -size; i <= size;i+=0.1){
         for(double j = -size; j <= size; j+=0.1){
