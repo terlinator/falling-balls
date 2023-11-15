@@ -10,5 +10,9 @@ class block(){
   createBlock(int, int);
 
   moveBlock();
+
+  setBlockValue();
   
-}
+};
+
+#endif //BLOCK_H_
