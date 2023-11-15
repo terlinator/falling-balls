@@ -1,7 +1,7 @@
 #ifndef BALL_H_
 #define BALL_H_
 
-class block(){
+class ball(){
   private:
   
   
