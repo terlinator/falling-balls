@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -G "CodeBlocks - Unix Makefiles" -S /Users/ari/Desktop/Projects/SDL_Plotter -B /Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -G "CodeBlocks - Unix Makefiles" -S /Users/ari/Desktop/falling-balls -B /Users/ari/Desktop/falling-balls/cmake-build-debug
 -- The C compiler identification is AppleClang 15.0.0.15000040
 -- The CXX compiler identification is AppleClang 15.0.0.15000040
 -- Detecting C compiler ABI info
@@ -12,5 +12,17 @@
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Configuring done
--- Generating done
--- Build files have been written to: /Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug
+CMake Error at CMakeLists.txt:8 (add_executable):
+  Cannot find source file:
+
+    SDL_Plotter.h
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+
+
+CMake Error at CMakeLists.txt:8 (add_executable):
+  No SOURCES given to target: GroupProject
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
