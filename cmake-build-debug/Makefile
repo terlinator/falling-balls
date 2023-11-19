@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ari/Desktop/Projects/SDL_Plotter
+CMAKE_SOURCE_DIR = /Users/ari/Desktop/falling-balls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ari/Desktop/falling-balls/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/CMakeFiles /Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ari/Desktop/falling-balls/cmake-build-debug/CMakeFiles /Users/ari/Desktop/falling-balls/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ari/Desktop/Projects/SDL_Plotter/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ari/Desktop/falling-balls/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,53 @@ GroupProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupProject.dir/build.make CMakeFiles/GroupProject.dir/build
 .PHONY : GroupProject/fast
 
-SDL_Plotter.o: SDL_Plotter.cpp.o
-.PHONY : SDL_Plotter.o
+SDL_Plotter/SDL_Plotter.o: SDL_Plotter/SDL_Plotter.cpp.o
+.PHONY : SDL_Plotter/SDL_Plotter.o
 
 # target to build an object file
-SDL_Plotter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupProject.dir/build.make CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.o
-.PHONY : SDL_Plotter.cpp.o
+SDL_Plotter/SDL_Plotter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupProject.dir/build.make CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o
+.PHONY : SDL_Plotter/SDL_Plotter.cpp.o
 
-SDL_Plotter.i: SDL_Plotter.cpp.i
-.PHONY : SDL_Plotter.i
+SDL_Plotter/SDL_Plotter.i: SDL_Plotter/SDL_Plotter.cpp.i
+.PHONY : SDL_Plotter/SDL_Plotter.i
 
 # target to preprocess a source file
-SDL_Plotter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupProject.dir/build.make CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.i
-.PHONY : SDL_Plotter.cpp.i
+SDL_Plotter/SDL_Plotter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupProject.dir/build.make CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.i
+.PHONY : SDL_Plotter/SDL_Plotter.cpp.i
 
-SDL_Plotter.s: SDL_Plotter.cpp.s
-.PHONY : SDL_Plotter.s
+SDL_Plotter/SDL_Plotter.s: SDL_Plotter/SDL_Plotter.cpp.s
+.PHONY : SDL_Plotter/SDL_Plotter.s
 
 # target to generate assembly for a file
-SDL_Plotter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupProject.dir/build.make CMakeFiles/GroupProject.dir/SDL_Plotter.cpp.s
-.PHONY : SDL_Plotter.cpp.s
+SDL_Plotter/SDL_Plotter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupProject.dir/build.make CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.s
+.PHONY : SDL_Plotter/SDL_Plotter.cpp.s
+
+UI_Scoring/UI_scoring.o: UI_Scoring/UI_scoring.cpp.o
+.PHONY : UI_Scoring/UI_scoring.o
+
+# target to build an object file
+UI_Scoring/UI_scoring.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupProject.dir/build.make CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o
+.PHONY : UI_Scoring/UI_scoring.cpp.o
+
+UI_Scoring/UI_scoring.i: UI_Scoring/UI_scoring.cpp.i
+.PHONY : UI_Scoring/UI_scoring.i
+
+# target to preprocess a source file
+UI_Scoring/UI_scoring.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupProject.dir/build.make CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.i
+.PHONY : UI_Scoring/UI_scoring.cpp.i
+
+UI_Scoring/UI_scoring.s: UI_Scoring/UI_scoring.cpp.s
+.PHONY : UI_Scoring/UI_scoring.s
+
+# target to generate assembly for a file
+UI_Scoring/UI_scoring.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GroupProject.dir/build.make CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.s
+.PHONY : UI_Scoring/UI_scoring.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -186,9 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... GroupProject"
-	@echo "... SDL_Plotter.o"
-	@echo "... SDL_Plotter.i"
-	@echo "... SDL_Plotter.s"
+	@echo "... SDL_Plotter/SDL_Plotter.o"
+	@echo "... SDL_Plotter/SDL_Plotter.i"
+	@echo "... SDL_Plotter/SDL_Plotter.s"
+	@echo "... UI_Scoring/UI_scoring.o"
+	@echo "... UI_Scoring/UI_scoring.i"
+	@echo "... UI_Scoring/UI_scoring.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

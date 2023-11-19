@@ -233,6 +233,21 @@ GroupProject_SOURCE_DIR:STATIC=/Users/ari/Desktop/falling-balls
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
+//The directory containing a CMake configuration file for SDL2.
+SDL2_DIR:PATH=/usr/local/lib/cmake/SDL2
+
+//The directory containing a CMake configuration file for SDL2_mixer.
+SDL2_mixer_DIR:PATH=/usr/local/lib/cmake/SDL2_mixer
+
+//Value Computed by CMake
+falling-balls_BINARY_DIR:STATIC=/Users/ari/Desktop/falling-balls/cmake-build-debug
+
+//Value Computed by CMake
+falling-balls_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+falling-balls_SOURCE_DIR:STATIC=/Users/ari/Desktop/falling-balls
+
 
 ########################
 # INTERNAL cache entries

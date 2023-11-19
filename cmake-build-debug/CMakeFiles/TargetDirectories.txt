@@ -1,0 +1,3 @@
+/Users/ari/Desktop/falling-balls/cmake-build-debug/CMakeFiles/GroupProject.dir
+/Users/ari/Desktop/falling-balls/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ari/Desktop/falling-balls/cmake-build-debug/CMakeFiles/rebuild_cache.dir
