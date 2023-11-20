@@ -94,6 +94,9 @@
 		<Unit filename="/Users/ari/Desktop/falling-balls/SDL_Plotter/SDL_Plotter.h">
 			<Option target="GroupProject"/>
 		</Unit>
+		<Unit filename="/Users/ari/Desktop/falling-balls/UI_Scoring/UI_score.h">
+			<Option target="GroupProject"/>
+		</Unit>
 		<Unit filename="/Users/ari/Desktop/falling-balls/UI_Scoring/UI_scoring.cpp">
 			<Option target="GroupProject"/>
 		</Unit>

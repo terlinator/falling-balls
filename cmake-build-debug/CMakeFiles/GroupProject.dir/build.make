@@ -83,24 +83,10 @@ CMakeFiles/GroupProject.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ari/Desktop/falling-balls/main.cpp -o CMakeFiles/GroupProject.dir/main.cpp.s
 
-CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o: CMakeFiles/GroupProject.dir/flags.make
-CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o: /Users/ari/Desktop/falling-balls/SDL_Plotter/SDL_Plotter.cpp
-CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o: CMakeFiles/GroupProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ari/Desktop/falling-balls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o -MF CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o.d -o CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o -c /Users/ari/Desktop/falling-balls/SDL_Plotter/SDL_Plotter.cpp
-
-CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ari/Desktop/falling-balls/SDL_Plotter/SDL_Plotter.cpp > CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.i
-
-CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ari/Desktop/falling-balls/SDL_Plotter/SDL_Plotter.cpp -o CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.s
-
 CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o: CMakeFiles/GroupProject.dir/flags.make
 CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o: /Users/ari/Desktop/falling-balls/UI_Scoring/UI_scoring.cpp
 CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o: CMakeFiles/GroupProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ari/Desktop/falling-balls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ari/Desktop/falling-balls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o -MF CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o.d -o CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o -c /Users/ari/Desktop/falling-balls/UI_Scoring/UI_scoring.cpp
 
 CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.i: cmake_force
@@ -111,18 +97,32 @@ CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ari/Desktop/falling-balls/UI_Scoring/UI_scoring.cpp -o CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.s
 
+CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o: CMakeFiles/GroupProject.dir/flags.make
+CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o: /Users/ari/Desktop/falling-balls/SDL_Plotter/SDL_Plotter.cpp
+CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o: CMakeFiles/GroupProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ari/Desktop/falling-balls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o -MF CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o.d -o CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o -c /Users/ari/Desktop/falling-balls/SDL_Plotter/SDL_Plotter.cpp
+
+CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ari/Desktop/falling-balls/SDL_Plotter/SDL_Plotter.cpp > CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.i
+
+CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ari/Desktop/falling-balls/SDL_Plotter/SDL_Plotter.cpp -o CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.s
+
 # Object files for target GroupProject
 GroupProject_OBJECTS = \
 "CMakeFiles/GroupProject.dir/main.cpp.o" \
-"CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o" \
-"CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o"
+"CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o" \
+"CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o"
 
 # External object files for target GroupProject
 GroupProject_EXTERNAL_OBJECTS =
 
 GroupProject: CMakeFiles/GroupProject.dir/main.cpp.o
-GroupProject: CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o
 GroupProject: CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o
+GroupProject: CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o
 GroupProject: CMakeFiles/GroupProject.dir/build.make
 GroupProject: /usr/local/Cellar/sdl2/2.28.5/lib/libSDL2.dylib
 GroupProject: /usr/local/opt/sdl2_mixer/lib/libSDL2_mixer.dylib

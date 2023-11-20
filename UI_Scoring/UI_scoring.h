@@ -1,37 +1,21 @@
-#ifndef UI_SCORING_H_
-#define UI_SCORING_H_
+#ifndef GROUPPROJECT_UI_SCORING_H_
+#define GROUPPROJECT_UI_SCORING_H_
+#include <fstream>
+using namespace std;
 
-class scoreTotal(){
+class scoreTracker{
 private:
-    int x, y;
+    int score;
 
 
 public:
 
     scoreTracker();
-    scoreTracker(int, int);
+    void incrementScore(int);
+    void displayScore(ostream&) const;
 
-    // setters
-    void setX(double);
-    void setY(double);
+//    double something(const scoreTracker&) const;
 
-    // getters
-    void getX(double);
-    void getY(double);
-
-
-    void display(ostream&) const;
-
-    double distance(const myPoint&) const;
-
-    myPoint midpoint(const myPoint&);
-}
-
-    //setters
-
-
-    //getters
-    get
-}
-
-#endif UI_SCORING_H_
+    // scoreTracker midpoint(const scoreTracker&);
+};
+#endif GROUPPROJECT_UI_SCORING_H_

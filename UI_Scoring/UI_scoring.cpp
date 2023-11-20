@@ -2,26 +2,17 @@
 // Created by Arianna Finley on 11/19/23.
 //
 #include "UI_scoring.h"
-scoreTracker(){
 
+scoreTracker::scoreTracker(){
+
+    // initial score possibly
+    int score = 0;
 }
-scoreTracker(int, int){
 
+void scoreTracker::incrementScore(int points) {
+    score += points;
 }
 
-// setters
-void setX(double){
-
+void scoreTracker::displayScore(ostream& out) const{
+    out << "Current Score: " << score << endl;
 }
-void setY(double);
-
-// getters
-void getX(double);
-void getY(double);
-
-
-void display(ostream&) const;
-
-double distance(const myPoint&) const;
-
-myPoint midpoint(const myPoint&);

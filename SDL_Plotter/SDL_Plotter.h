@@ -3,17 +3,17 @@
 
 //OSX Library
 #include <SDL2/SDL.h>
-#include <SDL2/SDL_mixer.h>
+// #include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_thread.h>
 
 //Windows Library
 //#include <SDL2/SDL.h>
 //#include <SDL2/SDL_mixer.h>
 
-#include <string.h>
+#include <string>
 #include <iostream>
 #include <string>
-#include <string.h>
+#include <string>
 #include <map>
 #include <queue>
 using namespace std;

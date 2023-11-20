@@ -16,7 +16,7 @@ set(SDL2_MIXER_LIBRARIES /usr/local/opt/sdl2_mixer/lib/libSDL2_mixer.dylib)
 include_directories(SDL_Plotter ${SDL2_INCLUDE_DIRS} ${SDL2_MIXER_INCLUDE_DIRS})
 
 # Add the executable with the source files
-add_executable(GroupProject main.cpp SDL_Plotter/SDL_Plotter.cpp UI_Scoring/UI_scoring.h UI_Scoring/UI_scoring.cpp)
+add_executable(GroupProject main.cpp UI_Scoring/UI_scoring.h UI_Scoring/UI_scoring.cpp UI_Scoring/UI_score.h SDL_Plotter/SDL_Plotter.cpp)
 
 # Link the SDL2 libraries
 target_link_libraries(GroupProject ${SDL2_LIBRARIES} ${SDL2_MIXER_LIBRARIES})
