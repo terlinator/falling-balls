@@ -6,12 +6,12 @@ class block(){
   int x, y;
   
   public:
-  createBlock();
-  createBlock(int, int);
+  void createBlock();
+  void createBlock(int x, int y);
 
-  moveBlock();
+  void moveBlock(int x, int y);
 
-  setBlockValue();
+  int setBlockValue(int val);
   
 };
 
