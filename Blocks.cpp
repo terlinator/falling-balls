@@ -1,4 +1,4 @@
-  void Block::createBlock(){
+  void block::createBlock(){
 
   }
   void drawBlock(point loc, int size, color c, SDL_Plotter& g);
