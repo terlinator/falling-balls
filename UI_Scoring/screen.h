@@ -20,6 +20,9 @@ void drawPoint(int posX, int posY, int width, int height, int R, int G, int B, S
 
 void writeText(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen);
 
+void writeHeader(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen);
+
+
 
 // draws a circle
 void drawCircle(point loc, int size, color c, SDL_Plotter& g);
