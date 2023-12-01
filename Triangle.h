@@ -18,7 +18,7 @@ struct Triangle {
   public:
   Color color;
 
-  Triangle(const Triangle& t){
+  TriangleTriangle(const Triangle& t){
        *this = t;
   }
   Triangle(Point,int,int,int,int){
@@ -27,8 +27,8 @@ struct Triangle {
 
   void drawTriangle(point loc, int size, color c, SDL_Plotter& g);
   vector<Point> getEdge();
-  int getHealth();
-  int setHealth();
+  int getHealth() const;  // Getter function declaration
+  void setHealth(int value);
 }
 
 
