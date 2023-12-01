@@ -16,19 +16,19 @@ struct Triangle {
   int health;
   
   public:
+  Color color;
+
   Triangle(const Triangle& t){
        *this = t;
   }
   Triangle(Point,int,int,int,int){
        *this = t;
-   }
+  }
 
   void drawTriangle(point loc, int size, color c, SDL_Plotter& g);
   vector<Point> getEdge();
-  
   int getHealth();
   int setHealth();
-  
 }
 
 
