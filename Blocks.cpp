@@ -37,7 +37,7 @@ void block::createBlock(){
   }
 
   int block::getBlockValue(){
-
+    return val;
   }
 
   vector<point> block::getEdge(){
