@@ -1,22 +1,42 @@
 #include <iostream>
-#include <cmath>
-#include "SDL_Plotter.h"
+//#include "UI_Scoring/UI_Scoring.h"
+#include "constants.h"
+#include "UI/screen.h"
+#include <cstdlib>
+#include "object/ball.h"
 
 using namespace std;
 
-void drawCircle(point loc, int size, color c, SDL_Plotter& g);
-
-int main(int argc, char ** argv)
-{
-
-    SDL_Plotter g(1000,1000);
+int main(int argc, char ** argv){
+    SDL_Plotter g(SCREEN_SIZE_WIDTH,SCREEN_SIZE_HEIGHT);
+    char key;
+    Ball ball;
     point p;
     color c;
     int size;
     Uint32 RGB;
 
+    // g.getColor(10,10);
+    point l (850,800);
+    point j (500,800);
+    point k (150,800);
+
+    color titleColor = {0,  255, 0};     // Green
+    color backgroundColor = {0, 0, 0};    // Black
+    color playButtonColor = {255, 0, 0};  // Red
+    color playButtonTextColor = {255, 255, 255}; // White
+
+    writeText(120,100,12,g);
+
+    for(int round = 0; round < 10; round++) {
+        drawCircle(l, 50, playButtonColor, g);
+        drawCircle(j, 50, playButtonColor, g);
+        drawCircle(k, 50, playButtonColor, g);
+    }
+
     while (!g.getQuit())
     {
+        g.update();
 
         if(g.kbhit()){
             switch(toupper(g.getKey())){
@@ -24,7 +44,6 @@ int main(int argc, char ** argv)
                     break;
             }
         }
-
         if(g.mouseClick()){
             p = g.getMouseClick();
             size = rand()%50;
@@ -33,19 +52,29 @@ int main(int argc, char ** argv)
             c.B  = rand()%256;
             drawCircle(p, size, c, g);
         }
-        g.update();
-        
-    }
-}
 
 
-void drawCircle(point loc, int size, color c, SDL_Plotter& g){
-    for(double i = -size; i <= size;i+=0.1){
-        for(double j = -size; j <= size; j+=0.1){
-            if(i*i + j*j <= size*size){
-                g.plotPixel(round(loc.x+i),round(loc.y+j),c);
-            }
+        ball.display(g, true);
+        ball.move();
+        ball.display(g, false);
+
+        g.Sleep(4);
+
         }
-    }
 
+//    Was messing around with the shapes
+//     drawCircle(l, 50, playButtonColor, g);
+//     drawRectangle(j, 50, backgroundColor, g);
+//     drawTriangle(k, 50, titleColor, g);
+
+// draws 10 balls. pretty useless but ye
+//    for (int i=0; i < 10; i++){
+//        point randPoint (rand() % 800, rand() % 1000);
+//        size = 50;
+//        color ballColor = {255, 23, 23};
+//        drawCircle(randPoint, size, ballColor, g);
+//    }
+
+
+    return 0;
 }
