@@ -25,7 +25,9 @@ void block::createBlock(){
   }
 
   void drawBlock(point loc, int size, color c, SDL_Plotter& g){
-    
+    for(int i = -size/2; i < size/2; i++){
+      
+    }
   }
 
   void block::setBlockValue(int val){
