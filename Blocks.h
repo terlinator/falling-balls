@@ -11,7 +11,9 @@ class block(){
 
   void moveBlock(int x, int y);
 
-  int setBlockValue(int val);
+  void setBlockValue(int val);
+  int getBlockValue();
+
   
 };
 
