@@ -26,7 +26,9 @@ int main(int argc, char ** argv){
     color playButtonColor = {255, 0, 0};  // Red
     color playButtonTextColor = {255, 255, 255}; // White
 
-    writeText(120,100,12,g);
+   // (position x, position y, font size, screen)
+    writeHeader(130,100, 12, g);
+    writeText(400,400,4,g);
 
     for(int round = 0; round < 10; round++) {
         drawCircle(l, 50, playButtonColor, g);
