@@ -1,22 +1,21 @@
 #ifndef BLOCKS_H_
 #define BLOCKS_H_
 
-vector<point> side(100);
-
 class block(){
   private:
   int x, y;
+  point square[SIZE];
   
   public:
   void createBlock();
   void drawBlock(point loc, int size, color c, SDL_Plotter& g);
 
-
-  void moveBlock(int x, int y);
-
   void setBlockValue(int val);
   int getBlockValue();
 
+  vector<point> getEdge();
+  
+  bool collisionCheck(point);
   
 };
 
