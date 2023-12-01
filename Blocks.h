@@ -5,6 +5,7 @@ class block(){
   private:
   int x, y;
   point square[SIZE];
+  health;
   
   public:
   void createBlock();
