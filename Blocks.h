@@ -7,7 +7,8 @@ class block(){
   
   public:
   void createBlock();
-  void createBlock(int x, int y);
+  void drawBlock(point loc, int size, color c, SDL_Plotter& g);
+
 
   void moveBlock(int x, int y);
 
