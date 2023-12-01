@@ -16,9 +16,9 @@ struct Color {
 }
 
 void block::createBlock(){
-    color.r = 0;
-    color.g = 0;
-    color.b = 0;
+    R = 0;
+    G = 0;
+    B = 0;
     loc.x = 0;
     loc.y = 0;
     size = 10;
@@ -27,21 +27,21 @@ void block::createBlock(){
   void drawBlock(point loc, int size, color r, SDL_Plotter& g){
     for(int i = -size/2; i < size/2; i++){
       for(int j = -size/2; k < size/2; j++){
-        g.plotPixel(i,j,color.r,color.g,color.b);
+        g.plotPixel(i,j,R,G,B);
       }
     }
   }
 
   void block::setBlockValue(int val){
-    
+    health = val;
   }
 
   int block::getBlockValue(){
-    return val;
+    return health;
   }
 
   vector<point> block::getEdge(){
-
+    
   }
   
   bool block::collisionCheck(point){
