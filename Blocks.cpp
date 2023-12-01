@@ -24,9 +24,11 @@ void block::createBlock(){
     size = 10;
   }
 
-  void drawBlock(point loc, int size, color c, SDL_Plotter& g){
+  void drawBlock(point loc, int size, color r, SDL_Plotter& g){
     for(int i = -size/2; i < size/2; i++){
-      
+      for(int j = -size/2; k < size/2; j++){
+        g.plotPixel(i,j,color.r,color.g,color.b);
+      }
     }
   }
 
