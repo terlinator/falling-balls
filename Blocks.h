@@ -1,6 +1,8 @@
 #ifndef BLOCKS_H_
 #define BLOCKS_H_
 
+vector<point> side(100);
+
 class block(){
   private:
   int x, y;
