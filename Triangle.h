@@ -12,7 +12,7 @@ struct Triangle {
 
   private:
   Point triangle[SIZE];
-  Point origin();
+  Point origin;
   int health;
   
   public:
