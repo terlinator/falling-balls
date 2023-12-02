@@ -3,7 +3,7 @@
 #include Point.h
 #include Color.h
 
-const SIZE;
+const int SIZE;
 
 #ifndef Triangle_h
 #define Triangle_h
@@ -11,7 +11,7 @@ const SIZE;
 struct Triangle {
 
   private:
-  Point triangle[SIZE];
+  vector<Point> points;
   Point origin;
   int health;
   
@@ -28,7 +28,9 @@ struct Triangle {
   void drawTriangle(point loc, int size, color c, SDL_Plotter& g);
   vector<Point> getEdge();
   int getHealth() const;  // Getter function declaration
-  void setHealth(int value);
+  void setHealth(int);
+  vector<Point> getPoints() const;
+  void setPoints(int[SIZE]);
 }
 
 
