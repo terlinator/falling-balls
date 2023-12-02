@@ -37,15 +37,19 @@ void block::createBlock(){
   square block::getEdge(){
     vector<vector <point> > edges;
     for(int i = 0; i < square.size(); i++){ //Loops through the vector for the points 
-      int min = square(0); //sets the first variable to the min
-      if(square(i) < min){ 
-        min = square(i); //Makes the smaller variable the min point in the vector
-      }
-      int max = square(0);
-      if(square(i) > max){
-        max = square(i); //Makes the greater variable the max point in the vector
-      }
-
+        for(int j = 0; k < square.size(); j++){  
+          int min = square(0).getY; //sets the first variable to the min
+          if(square(i).getY < min){ 
+              min = square(i).getY; //Makes the smaller variable the min point in the vector
+          }
+          int max = square(0).getY;
+          if(square(i).getY > max){
+               max = square(i).getY; //Makes the greater variable the max point in the vector
+          }
+          edges.push_back(point(minX,minY));
+          edges.push_back(point(maxX,maxY));
+        }
+    return edges;
   }
   
   bool block::collisionCheck(point){
