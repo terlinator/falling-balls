@@ -61,17 +61,19 @@ void block::createBlock(){
   }
 
   vector<vector<Point> > groupPointsByX(const vector<Point> points) {
-    //Find the max column to determine the range of cols
+    //Find the maximum column to determine the range of cols
     int maxCol = 0;
-    for (const auto& point : points) {
+    for (int i = 0; i < points.size(); i++) {
+        const Point& point = points[i];
         maxCol = max(maxCol, point.x);
     }
 
-    //Initialize cols to hold points with the same x value
-    vector<vector<Point>> cols(maxCol + 1);
+    //Create cols to hold points with the same col value
+    vector<vector<Point> > cols(maxCol + 1);
 
     //Group points into cols based on their x values
-    for (const auto& point : points) {
+    for (int i = 0; i < points.size(); i++) {
+        const Point& point = points[i];
         cols[point.x].push_back(point);
     }
     return cols;
