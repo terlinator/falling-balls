@@ -34,25 +34,24 @@ void block::createBlock(){
     return health;
   }
 
-  square block::getEdge(){
-    vector<vector <point> > edges;
-    int minX = square[0][0];
-    int maxX = square[0][0];
+  square block::getEdge(vector<vector<point> > edges){
+    int minX = edges[0][0];
+    int maxX = edges[0][0];
     for(int i = 0; i < square.size(); i++){ //Loops through the vector for the points 
-        if(square[i][j] < minX){
-            minX = square[i][j];
+        if(edges[i][0] < minX){
+            minX = edges[i][0];
         }
-        if(square[i][j] > maxX){
-            maxX = square[i][j];
+        if(edges[i][0] > maxX){
+            maxX = edges[i][0];
         }
-        for(int j = 0; k < square.size(); j++){  
-          int minY = square[i][0]; //sets the first variable to the min
-          if(square[i][j] < min){ 
-              min = square[i][j]; //Makes the smaller variable the min point in the vector
+        for(int j = 0; j < square.size(); j++){  
+          int minY = edges[i][0]; //sets the first variable to the min
+          if(edges[i][j] < minY){ 
+              minY = edges[i][j]; //Makes the smaller variable the min point in the vector
           }
-          int maxY = square[i][0];
-          if(square[i][j] > max){
-               max = square[i][j]; //Makes the greater variable the max point in the vector
+          int maxY = edges[i][0];
+          if(edges[i][j] > maxY){
+               maxY = edges[i][j]; //Makes the greater variable the max point in the vector
           }
         }
         edges.push_back(point(minX,minY));
