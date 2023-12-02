@@ -60,18 +60,21 @@ void block::createBlock(){
     return edges;
   }
 
-  vector<Point> sortByCol(vector<Point> p) {
-    Point mid = p[0];
-    for (int i = 0; i < p.size(); i++) {
-        for (int j = i+1; j < p.size(); j++) {
-            if (p[i].x < p[j].x) {
-                mid.x = p[j].x;
-                p[j].x = p[i].x;
-                p[i].x = mid.x;
-            }
-        }
+  vector<vector<Point> > groupPointsByX(const vector<Point> points) {
+    //Find the max column to determine the range of cols
+    int maxCol = 0;
+    for (const auto& point : points) {
+        maxCol = max(maxCol, point.x);
     }
-    return p;    //returns point array sorted by column (least x to greatest x)
+
+    //Initialize cols to hold points with the same x value
+    vector<vector<Point>> cols(maxCol + 1);
+
+    //Group points into cols based on their x values
+    for (const auto& point : points) {
+        cols[point.x].push_back(point);
+    }
+    return cols;
   }
   
   bool block::collisionCheck(point){
