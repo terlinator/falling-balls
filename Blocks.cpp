@@ -40,7 +40,7 @@ void block::createBlock(){
     return health;
   }
 
-  vector<point> block::getEdge(){
+  square block::getEdge(){
     
   }
   
