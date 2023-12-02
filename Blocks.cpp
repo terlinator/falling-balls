@@ -36,14 +36,14 @@ void block::createBlock(){
 
   square block::getEdge(){
     vector<vector <point> > edges;
-    for(int i = 0; i < square.size(); i++){
-      int min = square(0);
-      if(square(i) < min){
-        min = square(i);
+    for(int i = 0; i < square.size(); i++){ //Loops through the vector for the points 
+      int min = square(0); //sets the first variable to the min
+      if(square(i) < min){ 
+        min = square(i); //Makes the smaller variable the min point in the vector
       }
       int max = square(0);
       if(square(i) > max){
-        max = square(i);
+        max = square(i); //Makes the greater variable the max point in the vector
       }
 
   }
