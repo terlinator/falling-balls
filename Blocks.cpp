@@ -1,19 +1,4 @@
-struct Color { 
-  int R, G, B;
-  Color(const color color){
-    this->color;
-  }
-  Color(int R=0, int G = 0, int B = 0){
-    this->R = R;
-    this->G = G;
-    this->B = B;
-  }
-  Color operator= (const color color){
-    R = color.R;
-    G = color.G;
-    B = color.B;
-  }
-}
+#include "Color.h"
 
 void block::createBlock(){
     R = 0;
