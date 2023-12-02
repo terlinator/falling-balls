@@ -24,10 +24,19 @@ void block::createBlock(){
     size = 10;
   }
 
-  void drawBlock(point loc, int size, color r, SDL_Plotter& g){
-    for(int i = -size/2; i < size/2; i++){
-      for(int j = -size/2; k < size/2; j++){
-        g.plotPixel(i,j,R,G,B);
+  void Square:drawSquare(point origin, int sidelength, color c, SDL_Plotter& g) {
+    //plotPixel(p.x,  p.y,  r,  g,  b)
+    //for square
+    int squareX, squareY;
+    int R = this->color.R;
+    int G = this->color.G;
+    int B = this->color.B;
+  
+    for(int i = -sidelength/2; i < sidelength/2; i++){   //how far away (rows)
+      for(int j = -sidelength/2; j < sidelength/2; j++){ //how far away (columns)
+        squareX = (origin.x)-i;  //x plus or minus distance
+        squareY = (origin.y)-j;  //y plus or minus distance
+        g.plotPixel(squareX,squareY,R,G,B); 
       }
     }
   }
