@@ -1,3 +1,4 @@
+#include "point.h"
 #include "Color.h"
 
 void block::createBlock(){
