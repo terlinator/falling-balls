@@ -2,12 +2,6 @@
 */
 #include "Triangle.h"
 
-void Triangle::drawTriangle(point loc, int size, color c, SDL_Plotter& g) {
-}
-
-vector<Point> Triangle::getEdge() {
-}
-
 int Triangle::getHealth() const {
   return this->health;
 }
@@ -22,5 +16,12 @@ vector<Point> Triangle::getPoints() const {
 
 void Triangle::setPoints(vector<Point> vec) {
   this->points = vec;
+}
+
+void Triangle::drawTriangle(point loc, int size, color c, SDL_Plotter& g) {
+  
+}
+
+vector<Point> Triangle::getEdge() {
 }
 
