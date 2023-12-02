@@ -41,7 +41,30 @@ void block::createBlock(){
   }
 
   square block::getEdge(){
-    
+    int binarySearch(int a[], int n, int item){
+    int index = -1;
+    int first, last, mid;
+    bool found = false;
+
+    first = 0;
+    last = n-1;
+
+    while(!found and first <= last){
+        mid = (first + last)/2;
+        if(a[mid] == item){
+            found = true;
+            index = mid;
+        }
+        else if(a[mid] > item){
+            last = mid - 1;
+        }
+        else{
+            first = mid + 1;
+        }
+    }
+
+    return index;
+}
   }
   
   bool block::collisionCheck(point){
