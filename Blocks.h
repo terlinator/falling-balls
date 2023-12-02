@@ -4,7 +4,7 @@
 class block(){
   private:
   int x, y;
-  point square[SIZE];
+  vector<point> square;
   int health;
   
   public:
