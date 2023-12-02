@@ -51,6 +51,20 @@ void block::createBlock(){
         }
     return edges;
   }
+
+  vector<Point> sortByCol(vector<Point> p) {
+    Point mid = p[0];
+    for (int i = 0; i < p.size(); i++) {
+        for (int j = i+1; j < p.size(); j++) {
+            if (p[i].x < p[j].x) {
+                mid.x = p[j].x;
+                p[j].x = p[i].x;
+                p[i].x = mid.x;
+            }
+        }
+    }
+    return p;    //returns point array sorted by column (least x to greatest x)
+  }
   
   bool block::collisionCheck(point){
     if 
