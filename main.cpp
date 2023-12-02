@@ -1,9 +1,9 @@
 #include <iostream>
 //#include "UI_Scoring/UI_Scoring.h"
 #include "constants.h"
-#include "UI/screen.h"
+#include "screen.h"
 #include <cstdlib>
-#include "object/ball.h"
+#include "ball.h"
 
 using namespace std;
 
@@ -36,6 +36,15 @@ int main(int argc, char ** argv){
         drawCircle(k, 50, playButtonColor, g);
     }
 
+    /* NOTE:
+     * This code under while loop properly creates a ball,
+     * but is dependent on redrawing the screen, so static objects
+     * will erase.  IF YOU ADD AN OBJECT TO THE SCREEN IT NEEDS TO FIT
+     * INSIDE A getQuit LOOP SO THAT IT REDRAWS WITH THE BALL.
+     * Also, this is very bad, and it slows down the program with more
+     * things.  PLS FIX!!
+    */
+
     while (!g.getQuit())
     {
         g.update();
@@ -48,21 +57,19 @@ int main(int argc, char ** argv){
         }
         if(g.mouseClick()){
             p = g.getMouseClick();
-            size = rand()%50;
-            c.R  = rand()%256;
-            c.G  = rand()%256;
-            c.B  = rand()%256;
-            drawCircle(p, size, c, g);
+            ball.setLocation(p);
+            ball.display(g, true);
         }
 
 
-        ball.display(g, true);
-        ball.move();
+        g.clear();
         ball.display(g, false);
+        ball.move();
 
-        g.Sleep(4);
+        //g.Sleep(4);
 
-        }
+        drawCircle(l, 50, playButtonColor, g);
+    }
 
 //    Was messing around with the shapes
 //     drawCircle(l, 50, playButtonColor, g);
@@ -70,12 +77,12 @@ int main(int argc, char ** argv){
 //     drawTriangle(k, 50, titleColor, g);
 
 // draws 10 balls. pretty useless but ye
-//    for (int i=0; i < 10; i++){
-//        point randPoint (rand() % 800, rand() % 1000);
-//        size = 50;
-//        color ballColor = {255, 23, 23};
-//        drawCircle(randPoint, size, ballColor, g);
-//    }
+    for (int i=0; i < 10; i++){
+        point randPoint (rand() % 800, rand() % 1000);
+        size = 50;
+        color ballColor = {255, 23, 23};
+        drawCircle(randPoint, size, ballColor, g);
+    }
 
 
     return 0;
