@@ -35,7 +35,11 @@ void block::createBlock(){
     return health;
   }
 
-  square block::getEdge(vector<vector<point> > edges){
+  /*
+  vector<Point> block::getEdge(){
+    vector<vector<Point> > edges;
+    edges = groupPointsByX(this->points);    //Gets 2D vector from function given 1D vec of points
+
     int minX = edges[0][0];
     int maxX = edges[0][0];
     for(int i = 0; i < square.size(); i++){ //Loops through the vector for the points 
@@ -77,7 +81,7 @@ void block::createBlock(){
         cols[point.x].push_back(point);
     }
     return cols;
-  }
+  }*/
   
   bool block::collisionCheck(point){
     if 
