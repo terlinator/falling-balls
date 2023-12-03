@@ -27,9 +27,7 @@ class Block{
   void setBlockValue(int val);
 
   bool collisionCheck(Ball circle);
-  vector<point> getEdge(vector<vector<point>> edges);
-  
-
+  vector<Point> getEdge(vector<vector<Point> > edges);
   
 };
 
