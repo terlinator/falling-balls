@@ -47,11 +47,23 @@ int block::getBlockValue() {
 
 bool block::collisionCheck(Ball circle) {
     bool Tf;
-    if(circle.getRadius() > sideLength) {
-        Tf = false;
-    }
-    else {
+    //dist = sqrt((x2 - x1)^2 + (y2 - y1)^2 )
+    if(circle.getRadius() + circle.getLocation().x > ((sideLength / 2) + this->getLocation().x)) {
         Tf = true;
+    }
+    else if(circle.getRadius() + circle.getLocation().y > ((sideLength / 2) + this->getLocation().y)) {
+        Tf = true;
+    }
+    else if(circle.getRadius() + circle.getLocation().x >
+        ((pow(pow(sideLength/2,2) + pow(sideLength/2,2),1/2.0)))) {
+        Tf = true;
+    }
+    else if(circle.getRadius() + circle.getLocation().y >
+        ((pow(pow(sideLength/2,2) + pow(sideLength/2,2),1/2.0)))) {
+        Tf = true;
+        }
+    else {
+        Tf = false;
     }
     return Tf;
 }
