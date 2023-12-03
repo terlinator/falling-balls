@@ -1,6 +1,17 @@
-/*  Cam - 5:45 12/1/23
+/*  Cam - 5:45 12/3/23
 */
 #include "Triangle.h"
+
+Triangle() {
+  this->loc.x = 80;
+  this->loc.y = 80;
+
+  this->health = 1;
+  this->sideLength = 10;
+  this->color = Color(0,0,0);
+}
+
+Triangle(Point, int, Color);
 
 int Triangle::getHealth() const {
   return this->health;
@@ -18,24 +29,20 @@ void Triangle::setPoints(vector<Point> vec) {
   this->points = vec;
 }
 
-void Triangle::drawTriangle(point origin, int size, color c, SDL_Plotter& g) {
+void Triangle::drawTriangle(Point loc, int size, Color c, SDL_Plotter& g) {
   //plotPixel(p.x,  p.y,  r,  g,  b)
-  //for square
   int squareX, squareY;
   int R = this->color.R;
   int G = this->color.G;
   int B = this->color.B;
-  
-  for(int i = -sidelength/2; i < idelength/2; i++){   //how far away (rows)
-    for(int j = -sidelength/2; j < idelength/2; j++){ //how far away (columns)
+
+  //This is block
+  for(int i = -sidelength/2; i < sidelength/2; i++){   //how far away (rows)
+    for(int j = -sidelength/2; j < sidelength/2; j++){ //how far away (columns)
       squareX = (origin.x)-i;  //x plus or minus distance
       squareY = (origin.y)-j;  //y plus or minus distance
       g.plotPixel(squareX,squareY,R,G,B); 
     }
   }
-}
-
-vector<Point> Triangle::getEdge() {
-  
 }
 
