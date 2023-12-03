@@ -1,4 +1,5 @@
 #include "ball.h"
+#include "constants.h"
 
 using namespace std;
 
@@ -56,10 +57,15 @@ void Ball::move() {
     loc.x += f.getMagnitude() * cos(f.getDirection());
     loc.y += f.getMagnitude() * sin(f.getDirection());
     f.apply(GRAVITY);
-    if(loc.y >= 775) {
+    if(loc.y >= (SCREEN_SIZE_HEIGHT + radius)) {
         f.setDirection((3 * PI) / 2);
         f.setMagnitude(0.5* f.getMagnitude());
     }
+    if((loc.x >= (SCREEN_SIZE_WIDTH + radius)) || (loc.x < radius)) {
+        f.setDirection((3 * PI) / 2);
+        f.setMagnitude(0.5* f.getMagnitude());
+    }
+        
 
 
 }
