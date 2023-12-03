@@ -5,11 +5,11 @@
 
 class Block{
   private:
-  point loc;
-  std::vector<point> square;
+  Point loc;
+  vector<Point> square;
   int health;
-  Color colorType;
   int sideLength;
+  Color color;
 
   public:
 
