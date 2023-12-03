@@ -1,9 +1,9 @@
 #include <iostream>
 //#include "UI_Scoring/UI_Scoring.h"
 #include "constants.h"
-#include "screen.h"
+#include "UI_Scoring/screen.h"
 #include <cstdlib>
-#include "ball.h"
+#include "ball/ball.h"
 
 using namespace std;
 

@@ -1,23 +1,33 @@
 #ifndef BLOCKS_H_
 #define BLOCKS_H_
+#include "SDL_Plotter/SDL_Plotter.h"
+#include "ball/ball.h"
 
-class block(){
+class block{
   private:
-  int x, y;
-  vector<point> square;
+  point loc;
+  std::vector<point> square;
   int health;
-  
-  public:
-  void createBlock();
-  void drawBlock(point loc, int size, color c, SDL_Plotter& g);
+  Color colorType;
+  int sideLength;
 
+  public:
+  block();
+  void createBlock();
+  void setSide(int x);
+  void drawBlock(point loc, int size, color c, SDL_Plotter& g);
+  void setLocation(point x);
+
+  point getLocation();
+  int getSideLength();
   void setBlockValue(int val);
   int getBlockValue();
 
-  vector<point> getEdge();
+  bool collisionCheck(Ball circle);
+  vector<point> getEdge(vector<vector<point>> edges);
   
-  bool collisionCheck(point);
+
   
 };
 
-#endif //BLOCK_H_
+#endif //BLOCKS_H_
