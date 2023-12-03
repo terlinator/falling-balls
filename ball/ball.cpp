@@ -1,13 +1,15 @@
 #include "ball.h"
 
+using namespace std;
+
 Ball::Ball() {
 
     loc.x = 80;
     loc.y = 80;
 
     _color.R = 255;
-    _color.G = 25;
-    _color.B = 25;
+    _color.G = 255;
+    _color.B = 255;
 
     radius = 25;
     f.setDirection(PI / 2);
@@ -39,8 +41,8 @@ void Ball::display(SDL_Plotter& g, bool ERASE) {
     color c = _color;
     if (ERASE) {
         c.R = 255;
-        c.G = 255;
-        c.B = 255;
+        c.G = 25;
+        c.B = 25;
     }
     for (int x = -radius; x <= radius; x++) {
         for (int y = -radius; y <= radius; y++) {
