@@ -3,11 +3,12 @@
 #include "ball/ball.h"
 
 block::block() {
-    Color c;
-    x = 0;
-    y = 0;
-    sideLength = 10;
-    health = 1;
+  this->loc.x = 80;
+  this->loc.y = 80;
+
+  this->health = 1;
+  this->sideLength = 10;
+  this->color = Color(0,0,0);
 }
 
 void block::drawBlock(point origin, int sidelength, color c, SDL_Plotter& g) {
