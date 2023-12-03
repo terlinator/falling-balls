@@ -5,9 +5,10 @@
 
 class block{
   private:
-  int x, y;
+  point loc;
   std::vector<point> square;
   int health;
+  Color colorType;
   int sideLength;
 
   public:
@@ -15,7 +16,9 @@ class block{
   void createBlock();
   void setSide(int x);
   void drawBlock(point loc, int size, color c, SDL_Plotter& g);
+  void setLocation(point x);
 
+  point getLocation();
   int getSideLength();
   void setBlockValue(int val);
   int getBlockValue();
