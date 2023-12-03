@@ -1,38 +1,32 @@
-/* Cam - 12/1/23 4:30
-*/
-#include Point.h
-#include Color.h
+#ifndef TRIANGLE_H_
+#define TRIANGLE_H_
 
-const int SIZE;
+#include "SDL_Plotter/SDL_Plotter.h"
+#include "ball/ball.h"
 
-#ifndef Triangle_h
-#define Triangle_h
-
-struct Triangle {
-
+class Triangle{
   private:
+  Point loc;
   vector<Point> points;
-  Point origin;
   int health;
-  
-  public:
+  int sideLength;
   Color color;
 
-  TriangleTriangle(const Triangle& t){
-       *this = t;
-  }
-  Triangle(Point,int,int,int,int){
-       *this = t;
-  }
-
+  public:
+  Triangle();
+  Triangle(Point, int, Color);
   void drawTriangle(point loc, int size, color c, SDL_Plotter& g);
-  vector<Point> getEdge();
-  int getHealth() const;  // Getter function declaration
-  void setHealth(int);
-  vector<Point> getPoints() const;
-  void setPoints(int[SIZE]);
-}
 
+  Point getLocation();
+  void setLocation(point x);
 
+  int getSide();
+  void setSide(int x);
 
-#endif /* Triangle_h */
+  int getHealth();
+  void setHealth(int val);
+
+  bool collisionCheck(Ball circle);  
+};
+
+#endif //Triangle_h
