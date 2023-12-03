@@ -35,6 +35,17 @@ void block::createBlock(){
     return health;
   }
 
+bool block::collisionCheck(Ball circle) {
+    bool Tf;
+    if(circle.getRadius() > sideLength) {
+        Tf = false;
+    }
+    else {
+        Tf = true;
+    }
+    return Tf;
+}
+
   /*
   vector<Point> block::getEdge(){
     vector<vector<Point> > edges;
