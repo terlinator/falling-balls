@@ -38,11 +38,8 @@ int main(int argc, char ** argv){
 
     /* NOTE:
      * This code under while loop properly creates a ball,
-     * but is dependent on redrawing the screen, so static objects
-     * will erase.  IF YOU ADD AN OBJECT TO THE SCREEN IT NEEDS TO FIT
-     * INSIDE A getQuit LOOP SO THAT IT REDRAWS WITH THE BALL.
-     * Also, this is very bad, and it slows down the program with more
-     * things.  PLS FIX!!
+     * but any other objects in the loop WILL slow down
+     * the program depending on how they are drawn.
     */
 
     while (!g.getQuit())
@@ -58,15 +55,14 @@ int main(int argc, char ** argv){
         if(g.mouseClick()){
             p = g.getMouseClick();
             ball.setLocation(p);
-            ball.display(g, true);
+            g.clear();
         }
 
 
-        g.clear();
         ball.display(g, false);
         ball.move();
+        ball.display(g, true);
 
-        //g.Sleep(4);
 
         drawCircle(l, 50, playButtonColor, g);
     }
