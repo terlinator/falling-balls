@@ -98,7 +98,7 @@ bool Block::collisionCheck(Ball circle) {
 }
 */
 
-vector<vector<point>> groupPointsByX(const vector<point> points) {
+/*vector<vector<point>> groupPointsByX(const vector<point> points) {
     //Find the maximum column to determine the range of cols
     int maxCol = 0;
     for (int i = 0; i < points.size(); i++) {
@@ -116,6 +116,6 @@ vector<vector<point>> groupPointsByX(const vector<point> points) {
     }
     return cols;
 }
-
+*/
 
   
