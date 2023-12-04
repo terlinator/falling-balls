@@ -32,7 +32,6 @@ void Triangle::setPoints(vector<Point> vec) {
 void Triangle::drawTriangle(Point loc, int size, Color c, SDL_Plotter& g) {
   //plotPixel(p.x,  p.y,  r,  g,  b)
 
-  //This is block
   int xleft = 0;
   int xright = 0;
   int y = 0;
