@@ -31,17 +31,19 @@ void Triangle::setPoints(vector<Point> vec) {
 
 void Triangle::drawTriangle(Point loc, int size, Color c, SDL_Plotter& g) {
   //plotPixel(p.x,  p.y,  r,  g,  b)
-  int squareX, squareY;
-  int R = this->color.R;
-  int G = this->color.G;
-  int B = this->color.B;
 
   //This is block
-  for(int i = -sidelength/2; i < sidelength/2; i++){   //how far away (rows)
-    for(int j = -sidelength/2; j < sidelength/2; j++){ //how far away (columns)
-      squareX = (origin.x)-i;  //x plus or minus distance
-      squareY = (origin.y)-j;  //y plus or minus distance
-      g.plotPixel(squareX,squareY,R,G,B); 
+  int xleft = 0;
+  int xright = 0;
+  int y = 0;
+  
+  for(int i = 0; i < size/2; i++){   //loops through xs (half side)
+    for(int j = size; j > 0; j--){   //how far away (columns)
+      xleft = (getLocation().x)-i;   //x plus or minus distance
+      xright = (getLocation().x)+i;  //x plus or minus distance
+      y = (getLocation().y)+j;
+      g.plotPixel(xleft,y,color.R,color.G,color.B);  //Left side
+      g.plotPixel(xright,y,color.R,color.G,color.B); //Right side
     }
   }
 }
