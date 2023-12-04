@@ -75,20 +75,24 @@ void writeText(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen) {
     while (getline(infile, line)) {
         stringstream ss(line);
         col = 0;
-        while (getline(ss, value, ',')) {
+         while (getline(ss, value, ',')) {
             int pixelValue = stoi(value);
             int pixelSize = SizeOfFont;
 
-            // Prints black if number is 1, white for anything else
-            if(pixelValue == 1){
-                r = 0;
-                g = 0;
-                b = 0;
-            }
-            else{
-                r = 255;
-                g = 255;
-                b = 255;
+            r = 0;
+            g = 0;
+            b = 0;
+
+            for(int i = 0; i <= row; i++) {
+                b += 35;
+                r += 5;
+                for (int l = 0; l <= col; l++) {
+                    if (pixelValue == 0) {
+                        r = 255;
+                        g = 255;
+                        b = 255;
+                    }
+                }
             }
 
             // Draw the pixel
