@@ -41,6 +41,10 @@ int Block::getSideLength() {
     return sideLength;
 }
 
+point Block::getLocation() {
+    return loc;
+}
+
 int Block::getBlockValue() {
     return health;
 }
