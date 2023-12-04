@@ -2,7 +2,7 @@
 #include "Blocks.h"
 #include "ball/ball.h"
 
-block::block() {
+block::Block() {
   this->loc.x = 80;
   this->loc.y = 80;
 
@@ -11,7 +11,7 @@ block::block() {
   this->color = Color(0,0,0);
 }
 
-void block::drawBlock(point origin, int sidelength, color c, SDL_Plotter& g) {
+void Block::drawBlock(point origin, int sidelength, color c, SDL_Plotter& g) {
     //plotPixel(p.x,  p.y,  r,  g,  b)
     //for square
     int squareX, squareY;
@@ -30,22 +30,22 @@ void block::drawBlock(point origin, int sidelength, color c, SDL_Plotter& g) {
     }
 }
 
-void block::setBlockValue(int val) {
+void Block::setBlockValue(int val) {
     health = val;
 }
-void block::setSide(int x) {
+void Block::setSide(int x) {
     sideLength = x;
 }
 
-int block::getSideLength() {
+int Block::getSideLength() {
     return sideLength;
 }
 
-int block::getBlockValue() {
+int Block::getBlockValue() {
     return health;
 }
 
-bool block::collisionCheck(Ball circle) {
+bool Block::collisionCheck(Ball circle) {
     bool Tf;
     //dist = sqrt((x2 - x1)^2 + (y2 - y1)^2 )
     if(circle.getRadius() + circle.getLocation().x > ((sideLength / 2) + this->getLocation().x)) {
