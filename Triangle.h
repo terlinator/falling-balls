@@ -14,7 +14,7 @@ class Triangle{
   public:
   Triangle();
   Triangle(Point, int, int, Color); //Loc, size, health, color
-  void drawTriangle(const Triangle&, SDL_Plotter&);
+  void drawTriangle(SDL_Plotter&);
 
   Point getLocation();
   void setLocation(point x);
