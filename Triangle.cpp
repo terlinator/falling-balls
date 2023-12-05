@@ -3,7 +3,7 @@
 #include "Triangle.h"
 
 //Constructors
-Triangle() {
+Triangle::Triangle() {
   this->loc.x = 80;
   this->loc.y = 80;
 
@@ -12,7 +12,7 @@ Triangle() {
   this->color = Color(0,0,0);
 }
 
-Triangle(Point p, int size, int health, Color c) {
+Triangle::Triangle(Point p, int size, int health, Color c) {
   this->loc.x = p.x;
   this->loc.y = p.y;
 
@@ -31,11 +31,11 @@ void Triangle::setLoc(Point p) {
 }
 
 //Side Functions
-int getSide() {
+int Triangle::getSide() {
   return this->sideLength;
 }
 
-void setSide(int x) {
+void Triangle::setSide(int x) {
   this->sideLength = x;
 }
 
@@ -73,7 +73,7 @@ void Triangle::drawTriangle(const Triangle& t, SDL_Plotter& g) {
     }
 }
 
-bool collisionCheck(const Ball& ball, const Triangle& triangle) {
+bool Triangle::collisionCheck(const Ball& ball, const Triangle& triangle) {
     double ballX = ball.getLoc().x;
     double ballY = ball.getLoc().y;
 
