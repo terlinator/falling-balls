@@ -1,4 +1,10 @@
-//Cam
+//Group Twelve Names: Daniel Esquivel, Briel Finley,
+//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//Project Name: Falling Balls
+//Assignment Description: Create a circle definitions
+//File Name: Circle.cpp
+//File Created: 12/5/2023
+//File Last Edited: 12/05/2023
 #include "Circle.h"
 
 //Constructors
