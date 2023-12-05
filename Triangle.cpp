@@ -9,7 +9,7 @@ Triangle::Triangle() {
 
   this->health = 1;
   this->sideLength = 10;
-  this->color = color(0,0,0);
+  this->color1 = color(0,0,0);
 }
 
 Triangle::Triangle(Point p, int size, int health, color c) {
@@ -18,7 +18,7 @@ Triangle::Triangle(Point p, int size, int health, color c) {
 
   this->sideLength = size;
   this->health = health;
-  this->color = color(c.R,c.G,c.B);
+  this->color1 = color(c.R,c.G,c.B);
 }
 
 //Location Functions
@@ -55,7 +55,7 @@ void Triangle::drawTriangle(SDL_Plotter& g) {
 
     int xleft = 0;
     int xright = 0;
-    int y = 0;
+    //int y = 0;
 
     for (int i = 0; i < size; i++) {          // loops through rows
         for (int j = 0; j < size * 2; j++) {  // loops through columns adjusted based on row
@@ -63,18 +63,18 @@ void Triangle::drawTriangle(SDL_Plotter& g) {
             xright = loc.x - j + size;
 
             if (xleft >= loc.x - i && xleft <= loc.x + i) {
-                g.plotPixel(xleft, loc.y + i, color.R, color.G, color.B);   //Left side
+                g.plotPixel(xleft, loc.y + i, color1.R, color1.G, color1.B);   //Left side
             }
 
             if (xright >= loc.x - i && xright <= loc.x + i) {
-                g.plotPixel(xright, loc.y + i, color.R, color.G, color.B);  //Right side
+                g.plotPixel(xright, loc.y + i, color1.R, color1.G, color1.B);  //Right side
             }
         }
     }
 }
 
 //Return true if current triangle and ball hit
-bool Triangle::collisionCheck(const Ball& ball) {
+/*bool Triangle::collisionCheck(const Ball& ball) {
     double ballX = ball.getLoc().x;
     double ballY = ball.getLoc().y;
 
@@ -87,7 +87,4 @@ bool Triangle::collisionCheck(const Ball& ball) {
     //Check if the distance <= to ball radius + 1/2 triangle side
     return distance <= (ball.getRadius() + getSide() / 2.0);
 }
-
-
-
-
+*/
