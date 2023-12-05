@@ -49,9 +49,9 @@ void Triangle::setHealth(int value) {
 }
 
 //Plots an already constructed triangle given a plotter
-void Triangle::drawTriangle(const Triangle& t, SDL_Plotter& g) {
-    int size = t.getSide();
-    Point loc = t.getLoc();
+void Triangle::drawTriangle(SDL_Plotter& g) {
+    int size = getSide();
+    Point loc = getLoc();
 
     int xleft = 0;
     int xright = 0;
