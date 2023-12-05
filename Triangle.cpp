@@ -2,6 +2,7 @@
 */
 #include "Triangle.h"
 
+//Constructors
 Triangle() {
   this->loc.x = 80;
   this->loc.y = 80;
@@ -11,8 +12,34 @@ Triangle() {
   this->color = Color(0,0,0);
 }
 
-Triangle(Point, int, Color);
+Triangle(Point p, int size, int health, Color c) {
+  this->loc.x = p.x;
+  this->loc.y = p.y;
 
+  this->sideLength = size;
+  this->health = health;
+  this->color = Color(c.R,c.G,c.B);
+}
+
+//Location Functions
+Point Triangle::getLoc() const {
+  return this->loc;
+}
+
+void Triangle::setLoc(Point p) {
+  this->loc = p;
+}
+
+//Side Functions
+int getSide() {
+  return this->sideLength;
+}
+
+void setSide(int x) {
+  this->sideLength = x;
+}
+
+//Health Functions
 int Triangle::getHealth() const {
   return this->health;
 }
@@ -21,29 +48,28 @@ void Triangle::setHealth(int value) {
   this->health = value;
 }
 
-vector<Point> Triangle::getPoints() const {
-  return this->points; //Points is a private vector of points in .h
-}
+void Triangle::drawTriangle(const Triangle& t, SDL_Plotter& g) {
+    int size = t.getSide();
+    Point loc = t.getLoc();
 
-void Triangle::setPoints(vector<Point> vec) {
-  this->points = vec;
-}
+    int xleft = 0;
+    int xright = 0;
+    int y = 0;
 
-void Triangle::drawTriangle(Point loc, int size, Color c, SDL_Plotter& g) {
-  //plotPixel(p.x,  p.y,  r,  g,  b)
+    for (int i = 0; i < size; i++) {          // loops through rows
+        for (int j = 0; j < size * 2; j++) {  // loops through columns adjusted based on row
+            xleft = loc.x + j - size;
+            xright = loc.x - j + size;
 
-  int xleft = 0;
-  int xright = 0;
-  int y = 0;
-  
-  for(int i = 0; i < size/2; i++){   //loops through xs (half side)
-    for(int j = size; j > 0; j--){   //how far away (columns)
-      xleft = (getLocation().x)-i;   //x plus or minus distance
-      xright = (getLocation().x)+i;  //x plus or minus distance
-      y = (getLocation().y)+j;
-      g.plotPixel(xleft,y,color.R,color.G,color.B);  //Left side
-      g.plotPixel(xright,y,color.R,color.G,color.B); //Right side
+            if (xleft >= loc.x - i && xleft <= loc.x + i) {
+                g.plotPixel(xleft, loc.y + i, color.R, color.G, color.B);   //Left side
+            }
+
+            if (xright >= loc.x - i && xright <= loc.x + i) {
+                g.plotPixel(xright, loc.y + i, color.R, color.G, color.B);  //Right side
+            }
+        }
     }
-  }
 }
+
 
