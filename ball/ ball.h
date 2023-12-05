@@ -1,8 +1,9 @@
-#ifndef BALL_H_
-#define BALL_H_
+#ifndef BALL_H_INCLUDED
+#define BALL_H_INCLUDED
+
 #include <cmath>
-#include "../SDL_Plotter/SDL_Plotter.h"
-#include "Force/Force.h"
+#include "SDL_Plotter.h"
+#include "Force.h"
 
 using namespace std;
 
@@ -19,33 +20,31 @@ struct point_t{
 };
 
 class Ball {
-private:
-    // location
-    point loc;
+    private:
+        // location
+        point loc;
 
-    // color
-    color _color;
+        // color
+        color _color;
 
-    // radius
-    int radius;
-    force f;
+        // radius
+        int radius;
+        force f;
 
-public:
-    Ball();
+    public:
+        Ball();
 
-    void setColor(color);
-    void setLocation(point);
-    void setRadius(int);
+        void setColor(color);
+        void setLocation(point);
+        void setRadius(int);
 
-    color getColor() const;
-    const point getLocation() const;
-    const int getRadius() const;
+        color getColor() const;
+        const point getLocation() const;
+        const int getRadius() const;
 
-    void display(SDL_Plotter&, bool = false);
-    void move();
-
+        void display(SDL_Plotter&, bool = false);
+        void move();
 
 };
 
-
-#endif //BALL_H_
+#endif // BALL_H_INCLUDED
