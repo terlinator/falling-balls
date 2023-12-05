@@ -1,5 +1,10 @@
-/*  Cam - 5:45 12/3/23
-*/
+//Group Twelve Names: Daniel Esquivel, Briel Finley,
+//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//Project Name: Falling Balls
+//Assignment Description: Create a triangle header
+//File Name: Triangle.cpp
+//File Created: 11/14/2023
+//File Last Edited: 12/05/2023
 #include "Triangle.h"
 
 //Constructors
