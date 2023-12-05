@@ -13,7 +13,8 @@ class Circle{
   public:
   Circle();
   Circle(Point, int, int, Color); //Loc, radius, health, color
-  void drawCircle(const Triangle&, SDL_Plotter&);
+
+  void drawCircle(SDL_Plotter&);
 
   Point getLocation();
   void setLocation(point x);
