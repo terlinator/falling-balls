@@ -73,6 +73,7 @@ void Triangle::drawTriangle(const Triangle& t, SDL_Plotter& g) {
     }
 }
 
+//Return true if current triangle and ball hit
 bool Triangle::collisionCheck(const Ball& ball) {
     double ballX = ball.getLoc().x;
     double ballY = ball.getLoc().y;
