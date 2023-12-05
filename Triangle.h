@@ -9,20 +9,20 @@ class Triangle{
   Point loc;
   int health;
   int sideLength;
-  Color color;
+  color color;
 
   public:
   Triangle();
-  Triangle(Point, int, int, Color); //Loc, size, health, color
+  Triangle(Point, int, int, color); //Loc, size, health, color
   void drawTriangle(SDL_Plotter&);
 
-  Point getLocation();
+  Point getLocation() const;
   void setLocation(point x);
 
-  int getSide();
+  int getSide() const;
   void setSide(int x);
 
-  int getHealth();
+  int getHealth() const;
   void setHealth(int val);
 
   bool collisionCheck(const Ball&);
