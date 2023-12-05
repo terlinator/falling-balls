@@ -7,7 +7,6 @@
 class Triangle{
   private:
   Point loc;
-  vector<Point> points;
   int health;
   int sideLength;
   Color color;
