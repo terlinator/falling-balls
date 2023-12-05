@@ -9,16 +9,16 @@ Triangle::Triangle() {
 
   this->health = 1;
   this->sideLength = 10;
-  this->color = Color(0,0,0);
+  this->color = color(0,0,0);
 }
 
-Triangle::Triangle(Point p, int size, int health, Color c) {
+Triangle::Triangle(Point p, int size, int health, color c) {
   this->loc.x = p.x;
   this->loc.y = p.y;
 
   this->sideLength = size;
   this->health = health;
-  this->color = Color(c.R,c.G,c.B);
+  this->color = color(c.R,c.G,c.B);
 }
 
 //Location Functions
@@ -31,7 +31,7 @@ void Triangle::setLoc(Point p) {
 }
 
 //Side Functions
-int Triangle::getSide() {
+int Triangle::getSide() const{
   return this->sideLength;
 }
 
