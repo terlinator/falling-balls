@@ -47,12 +47,16 @@ void Circle::setHealth(int value) {
   this->health = value;
 }
 
-//Plots an already constructed triangle given a plotter
-void Circle::drawCircle(const Triangle& t, SDL_Plotter& g) {
-    int size = t.getSide();
-    Point loc = t.getLoc();
-
-    //Take from ball
+//Plots an already constructed circle given a plotter
+void Circle::drawCircle(SDL_Plotter& g) {
+    int radius = getRadius();
+    for (int x = -radius; x <= radius; x++) {
+        for (int y = -radius; y <= radius; y++) {
+            if (sqrt(pow(x, 2) + pow(y, 2)) <= radius) {
+                g.plotPixel(x + origin.x, y + origin.y, c.R, c.G, c.B);
+            }
+        }
+    }
 }
 
 bool collisionCheck(const Ball& ball) {
