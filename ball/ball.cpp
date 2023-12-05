@@ -48,7 +48,7 @@ void Ball::display(SDL_Plotter& g, bool ERASE) {
     for (int x = -radius; x <= radius; x++) {
         for (int y = -radius; y <= radius; y++) {
             if (sqrt(pow(x, 2) + pow(y, 2)) <= radius) {
-                g.plotPixel(x + loc.x, y + loc.y, c);
+                g.plotPixel(x + loc.x, y + loc.y, c.R, c.G, c.B);
             }
         }
     }
@@ -65,7 +65,7 @@ void Ball::move() {
         f.setDirection((3 * PI) / 2);
         f.setMagnitude(0.5* f.getMagnitude());
     }
-        
+
 
 
 }
