@@ -48,6 +48,7 @@ void Triangle::setHealth(int value) {
   this->health = value;
 }
 
+//Plots an already constructed triangle given a plotter
 void Triangle::drawTriangle(const Triangle& t, SDL_Plotter& g) {
     int size = t.getSide();
     Point loc = t.getLoc();
@@ -71,8 +72,6 @@ void Triangle::drawTriangle(const Triangle& t, SDL_Plotter& g) {
         }
     }
 }
-
-#include <cmath> // Include the cmath library for the sqrt function
 
 bool collisionCheck(const Ball& ball, const Triangle& triangle) {
     double ballX = ball.getLoc().x;
