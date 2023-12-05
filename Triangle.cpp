@@ -73,18 +73,18 @@ void Triangle::drawTriangle(const Triangle& t, SDL_Plotter& g) {
     }
 }
 
-bool Triangle::collisionCheck(const Ball& ball, const Triangle& triangle) {
+bool Triangle::collisionCheck(const Ball& ball) {
     double ballX = ball.getLoc().x;
     double ballY = ball.getLoc().y;
 
-    double triangleX = triangle.getLoc().x;
-    double triangleY = triangle.getLoc().y;
+    double triangleX = getLoc().x;
+    double triangleY = getLoc().y;
 
     //Find distance between the centers of the ball and the triangle
     double distance = sqrt(pow(ballX - triangleX, 2) + pow(ballY - triangleY, 2));
 
     //Check if the distance <= to ball radius + 1/2 triangle side
-    return distance <= (ball.getRadius() + triangle.getSide() / 2.0);
+    return distance <= (ball.getRadius() + getSide() / 2.0);
 }
 
 
