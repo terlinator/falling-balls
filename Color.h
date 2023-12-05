@@ -1,4 +1,11 @@
-/* Cam - 12/1/23 5:33 */
+//Group Twelve Names: Daniel Esquivel, Briel Finley,
+//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//Project Name: Falling Balls
+//Assignment Description: Create a Color header
+//File Name: Color.h
+//File Created: 12/1/2023
+//File Last Edited: 12/05/2023
+
 
 #ifndef COLOR_H_
 #define COLOR_H_
