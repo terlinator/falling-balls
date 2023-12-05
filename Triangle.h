@@ -1,23 +1,24 @@
-#ifndef TRIANGLE_H_
-#define TRIANGLE_H_
+#ifndef TRIANGLE_H_INCLUDED
+#define TRIANGLE_H_INCLUDED
 
-#include "SDL_Plotter/SDL_Plotter.h"
-#include "ball/ball.h"
+#include "SDL_Plotter.h"
+//#include "ball.h"
+#include "point.h"
 
 class Triangle{
   private:
   Point loc;
   int health;
   int sideLength;
-  color color;
+  color color1;
 
   public:
   Triangle();
   Triangle(Point, int, int, color); //Loc, size, health, color
   void drawTriangle(SDL_Plotter&);
 
-  Point getLocation() const;
-  void setLocation(point x);
+  Point getLoc() const;
+  void setLoc(Point x);
 
   int getSide() const;
   void setSide(int x);
@@ -25,7 +26,7 @@ class Triangle{
   int getHealth() const;
   void setHealth(int val);
 
-  bool collisionCheck(const Ball&);
+  //bool collisionCheck(const Ball&);
 };
 
-#endif //Triangle_h
+#endif // TRIANGLE_H_INCLUDED
