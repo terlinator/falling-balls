@@ -14,8 +14,8 @@ class Triangle{
 
   public:
   Triangle();
-  Triangle(Point, int, Color);
-  void drawTriangle(point loc, int size, color c, SDL_Plotter& g);
+  Triangle(Point, int, int, Color); //Loc, size, health, color
+  void drawTriangle(const Triangle&, SDL_Plotter&);
 
   Point getLocation();
   void setLocation(point x);
@@ -26,7 +26,7 @@ class Triangle{
   int getHealth();
   void setHealth(int val);
 
-  bool collisionCheck(Ball circle);  
+  bool collisionCheck(const Ball&);
 };
 
 #endif //Triangle_h
