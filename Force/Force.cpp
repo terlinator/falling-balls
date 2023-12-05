@@ -1,3 +1,10 @@
+//Group Twelve Names: Daniel Esquivel, Briel Finley, 
+//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//Project Name: Falling Balls
+//File Name: Force.h
+//File Created: 11/14/2023
+//File Last Edited: 12/05/2023, Andrew Meador
+
 #include "Force.h"
 
 force::force(){
