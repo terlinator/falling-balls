@@ -1,33 +1,32 @@
-#ifndef BLOCKS_H_
-#define BLOCKS_H_
+#ifndef BLOCK_H_INCLUDED
+#define BLOCK_H_INCLUDED
+
 #include "SDL_Plotter.h"
-#include "ball.h"
+//#include "ball.h"
+#include "point.h"
 
 class Block{
   private:
-  point loc;
-  std::vector<point> square;
-  int health;
-  color colorType;
+  Point loc;
   int sideLength;
+  int health;
+  color color1;
 
   public:
   Block();
-  void createBlock();
+  Block(Point, int, int, color); //Loc, sideLength, health, color
+  void drawBlock(SDL_Plotter&);
+
+  Point getLoc() const;
+  void setLoc(Point x);
+
+  int getSide() const;
   void setSide(int x);
-  void drawBlock(point loc, int size, color c, SDL_Plotter& g);
-  void setLocation(point x);
 
-  point getLocation();
-  int getSideLength();
-  void setBlockValue(int val);
-  int getBlockValue();
+  int getHealth() const;
+  void setHealth(int val);
 
-  bool collisionCheck(Ball circle);
-  vector<point> getEdge(vector<vector<point>> edges);
-
-
-
+  //bool collisionCheck(const Ball&);
 };
 
-#endif //BLOCKS_H_
+#endif // BLOCK_H_INCLUDED
