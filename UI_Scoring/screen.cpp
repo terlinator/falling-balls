@@ -1,3 +1,10 @@
+//Group Twelve Names: Daniel Esquivel, Briel Finley,
+//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//Project Name: Falling Balls
+//Assignment Description: Creates the definitions for the screen functions
+//File Name: screen.cpp
+//File Created: 12/5/2023
+//File Last Edited: 12/05/2023
 #include "screen.h"
 
 void drawHomeScreen(SDL_Plotter& homeScreen){
