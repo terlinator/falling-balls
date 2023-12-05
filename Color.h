@@ -26,4 +26,21 @@ struct Color {
   }
 };
 
+
+
+/*this in sdl:
+struct color{
+    unsigned int R,G,B;
+    color(){
+        R = G = B = 0;
+    }
+
+    color(int r, int g, int b){
+        R = r;
+        G = g;
+        B = b;
+    }
+};
+*/
+
 #endif COLOR_H_
