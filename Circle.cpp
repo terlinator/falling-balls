@@ -8,16 +8,16 @@ Circle() {
 
   this->health = 1;
   this->radius = 10;
-  this->color = Color(0,0,0);
+  this->color = color(0,0,0);
 }
 
-Circle(Point p, int radius, int health, Color c) {
+Circle(Point p, int radius, int health, color c) {
   this->loc.x = p.x;
   this->loc.y = p.y;
 
   this->radius = radius;
   this->health = health;
-  this->color = Color(c.R,c.G,c.B);
+  this->color = color(c.R,c.G,c.B);
 }
 
 //Location Functions
@@ -30,7 +30,7 @@ void Circle::setLoc(Point p) {
 }
 
 //Side Functions
-int Circle::getRadius() {
+int Circle::getRadius() const{
   return this->radius;
 }
 
