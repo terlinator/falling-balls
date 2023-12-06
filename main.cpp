@@ -32,6 +32,8 @@ int main(int argc, char ** argv){
     Triangle triangle;
     color color1(0, 255, 0);
     Circle circle(l, 20, 1, color1);
+    unsigned long long int numUpdate = 0;
+    double directionChange = rand() % 10 / 100.0;
 
 
     // g.getColor(10,10);
@@ -59,7 +61,7 @@ int main(int argc, char ** argv){
      * but any other objects in the loop WILL slow down
      * the program depending on how they are drawn.
     */
-
+    ball.setLocation(p);
     while (!g.getQuit())
     {
         g.update();
@@ -77,19 +79,45 @@ int main(int argc, char ** argv){
             //g.clear();
         }
 
-        ball.setLocation(p);
+
         ball.setPrevLocation(ball.getLocation());
 
-        ball.display(g, false);
-        g.update();
-        //ball.move();
-        ball.display(g, true);
+        if((numUpdate % 1) == 0) {
+            ball.display(g, false);
+
+            g.update();
+            ball.display(g, true);
+
+        }
+
+        force f = ball.getForce();
+        f.apply(GRAVITY);
+        ball.setForce(f);
+        ball.move();
+
+
 
 
         //block.drawBlock(g);
         //triangle.drawTriangle(g);
         circle.drawCircle(g);
+        if(circle.collisionCheck(ball)) {
+            if(rand() % 2 == 0) {
+                directionChange *= -1.0;
+            }
+            ball.setForce(force(1.5, -PI/2 + directionChange)); //scale magnitude to gravity
+        }
 
+        if(ball.getLocation().y >= g.getRow() - ball.getRadius()) {
+            ball.setForce(force(1.5, -PI/2 + directionChange));
+        }
+        if(ball.getLocation().x >= g.getCol() - ball.getRadius()) {
+            ball.setForce(force(1.5, -PI + directionChange));
+        }
+        if(ball.getLocation().x <= ball.getRadius()) {
+            ball.setForce(force(1.5, -PI/2 - directionChange));
+        }
+        numUpdate ++;
     }
 
 //    Was messing around with the shapes
