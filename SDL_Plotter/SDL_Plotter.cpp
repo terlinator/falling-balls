@@ -1,10 +1,3 @@
-//Group Twelve Names: Daniel Esquivel, Briel Finley,
-//	Cameron Hardin, Sterling Matthews, Andrew Meador
-//Project Name: Falling Balls
-//Assignment Description: Create a SDL_Plotter
-//File Name: SDL_Plotter.cpp
-//File Created: 11/14/2023
-//File Last Edited: 12/05/2023
 #include "SDL_Plotter.h"
 
 //Threaded Sound Function
