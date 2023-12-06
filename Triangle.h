@@ -1,5 +1,5 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley,
-//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//    Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
 //Assignment Description: Create a triangle header
 //File Name: Triangle.h
@@ -9,9 +9,9 @@
 #ifndef TRIANGLE_H_INCLUDED
 #define TRIANGLE_H_INCLUDED
 
-#include "SDL_Plotter.h"
+#include "SDL_Plotter.hpp"
 //#include "ball.h"
-#include "point.h"
+#include "Point.h"
 
 class Triangle{
   private:
