@@ -1,5 +1,5 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley,
-//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//    Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
 //Assignment Description: Create a triangle header
 //File Name: Triangle.cpp
@@ -22,7 +22,7 @@ Triangle::Triangle(Point p, int size, int health, color c) {
   this->loc.x = p.x;
   this->loc.y = p.y;
 
-  this->sideLength = size;
+  this->sideLength = size/2;
   this->health = health;
   this->color1 = color(c.R,c.G,c.B);
 }
@@ -59,25 +59,16 @@ void Triangle::drawTriangle(SDL_Plotter& g) {
     int size = getSide();
     Point loc = getLoc();
 
-    int xleft = 0;
-    int xright = 0;
-    //int y = 0;
+    for (int i = 0; i < size; i++) { // loops through rows
+        int xStart = loc.x - i;
+        int xEnd = loc.x + i;
 
-    for (int i = 0; i < size; i++) {          // loops through rows
-        for (int j = 0; j < size * 2; j++) {  // loops through columns adjusted based on row
-            xleft = loc.x + j - size;
-            xright = loc.x - j + size;
-
-            if (xleft >= loc.x - i && xleft <= loc.x + i) {
-                g.plotPixel(xleft, loc.y + i, color1.R, color1.G, color1.B);   //Left side
-            }
-
-            if (xright >= loc.x - i && xright <= loc.x + i) {
-                g.plotPixel(xright, loc.y + i, color1.R, color1.G, color1.B);  //Right side
-            }
+        for (int x = xStart; x <= xEnd; x++) {
+            g.plotPixel(x, loc.y + i, color1.R, color1.G, color1.B);
         }
     }
 }
+
 
 //Return true if current triangle and ball hit
 /*bool Triangle::collisionCheck(const Ball& ball) {
