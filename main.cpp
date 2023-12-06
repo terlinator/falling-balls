@@ -103,19 +103,19 @@ int main(int argc, char ** argv){
         circle.drawCircle(g);
         if(circle.collisionCheck(ball)) {
             if(rand() % 2 == 0) {
-                directionChange *= -1.0;
+                directionChange *= -1.0;    //Randomly makes bounce left or right
             }
-            ball.setForce(force(1.5, -PI/2 + directionChange)); //scale magnitude to gravity
+            ball.setForce(force(1.5, -PI/2 + directionChange));     //Scale magnitude to gravity
         }
 
-        if(ball.getLocation().y >= g.getRow() - ball.getRadius()) {
+        if(ball.getLocation().y >= g.getRow() - ball.getRadius()) { //Collisions with floor
             ball.setForce(force(1.5, -PI/2 + directionChange));
         }
-        if(ball.getLocation().x >= g.getCol() - ball.getRadius()) {
+        if(ball.getLocation().x >= g.getCol() - ball.getRadius()) { //Collisions with right wall
             ball.setForce(force(1.5, -PI + directionChange));
         }
         if(ball.getLocation().x <= ball.getRadius()) {
-            ball.setForce(force(1.5, -PI/2 - directionChange));
+            ball.setForce(force(1.5, -PI/2 - directionChange));     //Collisions with left wall
         }
         numUpdate ++;
     }
