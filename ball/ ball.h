@@ -11,10 +11,11 @@
 #include <cmath>
 #include "SDL_Plotter.h"
 #include "Force.h"
+#include "point.h"
 
 using namespace std;
 
-struct point_t{
+/*struct point_t{
     double x, y;
     point_t(){
         x = y = 0;
@@ -24,12 +25,15 @@ struct point_t{
         this->x = x;
         this->y = y;
     }
-};
+};*/
 
 class Ball {
     private:
         // location
-        point loc;
+        Point loc;
+
+        // previous location
+        Point prevLoc;
 
         // color
         color _color;
@@ -42,15 +46,19 @@ class Ball {
         Ball();
 
         void setColor(color);
-        void setLocation(point);
+        void setLocation(Point);
+        void setPrevLocation(Point);
         void setRadius(int);
+        void setForce(force);
 
         color getColor() const;
-        const point getLocation() const;
+        const Point getLocation() const;
+        const Point getPrevLocation() const;
         const int getRadius() const;
+        const force getForce() const;
 
         void display(SDL_Plotter&, bool = false);
-        void move();
+        //void move();
 
 };
 
