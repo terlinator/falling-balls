@@ -32,9 +32,12 @@ int main(int argc, char** argv) {
     g.initSound("BallCollision.wav");
 
     //Data Abstraction
+    char key;
     Ball ball;
     Point p(80, 80);
     color c;
+    int size;
+    Uint32 RGB;
     //Block block;
     color backgroundColor(0, 0, 0); // Black
     Point l(80, 800);
@@ -56,25 +59,6 @@ int main(int argc, char** argv) {
     //(position x, position y, font size, screen)
     //writeHeader(130,100, 12, g);
     //writeText(400,400,4,g);
-
-    //CREATE BLOCKS
-    const int BLOCK_COUNT = 6;
-    color objColor(0, 0, 255);
-    std::vector<Block> blocks;
-
-    for (int i = 0; i < BLOCK_COUNT; i++) {
-        Point blockPosition(i * (OBJECT_SIZE + 20) + OBJECT_SIZE / 2, g.getRow() - (OBJECT_SIZE / 2));
-        Block block(blockPosition, OBJECT_SIZE / 2, 1, objColor);
-        block.drawBlock(g);
-        blocks.push_back(block);
-    }
-    for (int i = 0; i < BLOCK_COUNT; i++) {
-        if(blocks[i].collisionCheck(ball)) {    //If that ball collides
-            ball.setForce(force(1.5, -PI / 2 + directionChange));
-            Mix_PlayChannel(-1, collisionSound, 0);
-            cout << "YIKESILUGFLASJFG LAH" << endl;
-        }
-    }
 
     for (int round = 0; round < 10; round++) {
         // drawCircle(l, 50, playButtonColor, g);
@@ -112,6 +96,34 @@ int main(int argc, char** argv) {
             g.update();
             ball.display(g, true);
         }
+        
+        //CREATE BLOCKS
+        const int BLOCK_COUNT = 4;
+        color objColor(0, 0, 255);
+        vector<Block> blocks;
+
+        const double SPACING_SCALE = 0.1;  // Adjust the scale factor as needed
+
+        const int BLOCK_SPACING = SPACING_SCALE * SCREEN_SIZE_WIDTH / (BLOCK_COUNT + 1);
+
+        for (int i = 0; i < BLOCK_COUNT; i++) {
+            Point blockPosition((i + 1) * BLOCK_SPACING + i * (SCREEN_SIZE_WIDTH - BLOCK_COUNT * BLOCK_SPACING) / BLOCK_COUNT + OBJECT_SIZE / 2,
+                                 g.getRow() - (OBJECT_SIZE / 2));
+            Block block(blockPosition, OBJECT_SIZE / 2, 1, objColor);
+            block.drawBlock(g);
+            blocks.push_back(block);
+        }
+
+        for (int i = 0; i < BLOCK_COUNT; i++) {
+            if (blocks[i].collisionCheck(ball)) { // If that ball collides
+                ball.setForce(force(1.5, -PI / 2 + directionChange));
+                Mix_PlayChannel(-1, collisionSound, 0);
+            }
+        }
+
+
+
+        //END BLOCKS
 
         force f = ball.getForce();
         f.apply(GRAVITY);
@@ -147,11 +159,6 @@ int main(int argc, char** argv) {
         }
         numUpdate++;
     }
-
-// Was messing around with the shapes
-// drawCircle(l, 50, playButtonColor, g);
-
-// drawTriangle(k, 50, titleColor, g);
 
 return 0;
 }
