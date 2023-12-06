@@ -23,7 +23,7 @@ class Circle{
   public:
   Circle();
 
-  Circle(Point, int, int, struct color); //Loc, radius, health, color
+  Circle(Point, int, int, color); //Loc, radius, health, color
 /*
  * description: draws a Circle
  * return: void
@@ -39,7 +39,7 @@ class Circle{
  * postcondition:   returns the point of the circle
  *
 */
-  Point getLoc();
+  Point getLoc() const;
 /*
  * description: sets the location of the circle
  * return:  void
@@ -47,7 +47,7 @@ class Circle{
  * postcondition:  sets the location of the circle to point x
  *
 */
-  void setLoc(point x);
+  void setLoc(Point x);
 /*
  * description: gets the radius of the circle
  * return: int
@@ -55,7 +55,7 @@ class Circle{
  * postcondition: returns an int
  *
 */
-  int getRadius();
+  int getRadius() const;
 /*
  * description: sets the radius of the circle
  * return: void
@@ -71,7 +71,7 @@ class Circle{
  * postcondition: returns an int
  *
 */
-  int getHealth();
+  int getHealth() const;
 /*
  * description:   sets the ball health
  * return:   void
