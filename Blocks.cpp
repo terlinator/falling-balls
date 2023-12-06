@@ -1,6 +1,9 @@
 
 
-#include "Blocks.h"
+#include "blocks.h"
+#include "Point.h"
+#include "SDL_Plotter.hpp"
+#include "ball.h"
 //#include the sdl plotter
 
 Block::Block() {
@@ -52,11 +55,12 @@ void Block::drawBlock(SDL_Plotter& g) {
     //plotPixel(p.x,  p.y,  r,  g,  b)
     Point p = getLoc();
     int squareX, squareY;
-    int R = c.R;
-    int G = c.G;
-    int B = c.B;
+    int R = color1.R;
+    int G = color1.G;
+    int B = color1.B;
+    int sidelength = getSide();
 
-    for (int i = -sidelength / 2; i < sidelength / 2; i++) {
+    for (int i = -sideLength / 2; i < sidelength / 2; i++) {
         //how far away (rows)
         for (int j = -sidelength / 2; j < sidelength / 2; j++) {
             //how far away (columns)
@@ -69,25 +73,29 @@ void Block::drawBlock(SDL_Plotter& g) {
 
 
 
-/*bool Block::collisionCheck(Ball circle) {
-    bool Tf;
-    //dist = sqrt((x2 - x1)^2 + (y2 - y1)^2 )
-    if(circle.getRadius() + circle.getLocation().x > ((sideLength / 2) + this->getLocation().x)) {
-        Tf = true;
+bool Block::collisionCheck(const Ball& circle) {
+    // Calculate the distance between the centers of the ball and the block
+    double distanceX = abs(circle.getLoc().x - this->getLoc().x);
+    double distanceY = abs(circle.getLoc().y - this->getLoc().y);
+
+    // Ensure the ball is within the x and y bounds of the block
+    if (distanceX > (sideLength / 2 + circle.getRadius())) {
+        return false;
     }
-    else if(circle.getRadius() + circle.getLocation().y > ((sideLength / 2) + this->getLocation().y)) {
-        Tf = true;
+    if (distanceY > (sideLength / 2 + circle.getRadius())) {
+        return false;
     }
-    else if(circle.getRadius() + circle.getLocation().x >
-        ((pow(pow(sideLength/2,2) + pow(sideLength/2,2),1/2.0)))) {
-        Tf = true;
+
+    // Check if the ball is within the diagonal bounds of the block
+    if (distanceX <= (sideLength / 2)) {
+        return true;
     }
-    else if(circle.getRadius() + circle.getLocation().y >
-        ((pow(pow(sideLength/2,2) + pow(sideLength/2,2),1/2.0)))) {
-        Tf = true;
-        }
-    else {
-        Tf = false;
+    if (distanceY <= (sideLength / 2)) {
+        return true;
     }
-    return Tf;
-}*/
+
+    // Check if the ball is within the corner bounds of the block
+    double cornerDistance = pow(distanceX - sideLength / 2, 2) + pow(distanceY - sideLength / 2, 2);
+    return cornerDistance <= pow(circle.getRadius(), 2);
+}
+
