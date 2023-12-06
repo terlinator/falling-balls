@@ -32,12 +32,9 @@ int main(int argc, char** argv) {
     g.initSound("BallCollision.wav");
 
     //Data Abstraction
-    char key;
     Ball ball;
     Point p(80, 80);
     color c;
-    int size;
-    Uint32 RGB;
     //Block block;
     color backgroundColor(0, 0, 0); // Black
     Point l(80, 800);
