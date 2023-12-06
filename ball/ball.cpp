@@ -1,5 +1,5 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley,
-//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//    Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
 //Assignment Description: Create definitions for the ball functions
 //File Name: ball.cpp
@@ -7,6 +7,7 @@
 //File Last Edited: 12/05/2023
 #include "ball.h"
 #include "constants.h"
+#include "force.h"
 
 using namespace std;
 
@@ -31,10 +32,10 @@ void Ball::setColor(color c) {
     _color = c;
 }
 
-void Ball::setLocation(Point p){
+void Ball::setLoc(Point p){
     loc = p;
 }
-void Ball::setPrevLocation(Point p){
+void Ball::setPrevLoc(Point p){
     prevLoc = p;
 }
 void Ball::setRadius(int r) {
@@ -48,10 +49,10 @@ void Ball::setForce(force f2) {
 color Ball::getColor() const{
     return _color;
 }
-const Point Ball::getLocation() const{
+const Point Ball::getLoc() const{
     return loc;
 }
-const Point Ball::getPrevLocation() const{
+const Point Ball::getPrevLoc() const{
     return prevLoc;
 }
 const int Ball::getRadius() const {
@@ -76,21 +77,18 @@ void Ball::display(SDL_Plotter& g, bool ERASE) {
         }
     }
 }
-/*void Ball::move() {
-    prevLoc.x += f.getMagnitude() * cos(f.getDirection());
-    prevLoc.y += f.getMagnitude() * sin(f.getDirection());
+void Ball::move() {
+    loc.x += f.getMagnitude() * cos(f.getDirection());
+    loc.y += f.getMagnitude() * sin(f.getDirection());
     f.apply(GRAVITY);
 
 
-    if(loc.y >= (SCREEN_SIZE_HEIGHT + radius)) {
+    /*if(loc.y >= (SCREEN_SIZE_HEIGHT + radius)) {
         f.setDirection((3 * PI) / 2);
         f.setMagnitude(0.5* f.getMagnitude());
     }
     if((loc.x >= (SCREEN_SIZE_WIDTH + radius)) || (loc.x < radius)) {
         f.setDirection((3 * PI) / 2);
         f.setMagnitude(0.5* f.getMagnitude());
-    }
-
-
-
-}*/
+    }*/
+}
