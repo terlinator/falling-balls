@@ -1,29 +1,31 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley,
-//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//    Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
 //Assignment Description: Create a circle definitions
 //File Name: Circle.cpp
 //File Created: 12/5/2023
 //File Last Edited: 12/05/2023
 #include "Circle.h"
+#include "Point.h"
+#include "SDL_Plotter.hpp"
 
 //Constructors
-Circle() {
+Circle::Circle() {
   this->loc.x = 80;
   this->loc.y = 80;
 
   this->health = 1;
   this->radius = 10;
-  this->color = color(0,0,0);
+  this->color1 = color(0,0,0);
 }
 
-Circle(Point p, int radius, int health, color c) {
+Circle::Circle(point p, int radius, int health, color c) {
   this->loc.x = p.x;
   this->loc.y = p.y;
 
   this->radius = radius;
   this->health = health;
-  this->color = color(c.R,c.G,c.B);
+  this->color1 = color(c.R,c.G,c.B);
 }
 
 //Location Functions
@@ -59,13 +61,13 @@ void Circle::drawCircle(SDL_Plotter& g) {
     for (int x = -radius; x <= radius; x++) {
         for (int y = -radius; y <= radius; y++) {
             if (sqrt(pow(x, 2) + pow(y, 2)) <= radius) {
-                g.plotPixel(x + origin.x, y + origin.y, c.R, c.G, c.B);
+                g.plotPixel(x + getLoc().x, y + getLoc().y, color1.R, color1.G, color1.B);
             }
         }
     }
 }
 
-bool collisionCheck(const Ball& ball) {
+bool Circle::collisionCheck(const Ball& ball) {
     double ballX = ball.getLoc().x;
     double ballY = ball.getLoc().y;
 
