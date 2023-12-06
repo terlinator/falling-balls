@@ -5,13 +5,14 @@
 //File Name: constans.h
 //File Created: 11/14/2023
 //File Last Edited: 12/05/2023
-#ifndef GROUPPROJECT_CONSTANTS_H
-#define GROUPPROJECT_CONSTANTS_H
+#ifndef CONSTANTS_H_INCLUDED
+#define CONSTANTS_H_INCLUDED
 
-const int SCREEN_SIZE_WIDTH = 1000;
-const int SCREEN_SIZE_HEIGHT = 1000;
+#include "Force.h"
 
+const int SCREEN_SIZE_WIDTH = 800;
+const int SCREEN_SIZE_HEIGHT = 800;
+const int OBJECT_SIZE = 25;
+const force GRAVITY(0.001, PI/2);
 
-
-
-#endif //GROUPPROJECT_CONSTANTS_H
+#endif // CONSTANTS_H_INCLUDED
