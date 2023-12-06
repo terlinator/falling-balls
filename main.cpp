@@ -13,6 +13,7 @@
 #include "ball.h"
 #include "blocks.h"
 #include "Triangle.h"
+#include "Circle.h"
 #include "SDL_Plotter.h"
 
 using namespace std;
@@ -21,22 +22,25 @@ int main(int argc, char ** argv){
     SDL_Plotter g(SCREEN_SIZE_WIDTH,SCREEN_SIZE_HEIGHT);
     char key;
     Ball ball;
-    point p;
+    Point p (80, 80);
     color c;
     int size;
     Uint32 RGB;
     Block block;
+    color backgroundColor(0, 0, 0);    // Black
+    Point l(80,800);
     Triangle triangle;
     color color1(0, 255, 0);
+    Circle circle(l, 20, 1, color1);
 
 
     // g.getColor(10,10);
-    point l (850,800);
-    point j (500,800);
-    point k (150,800);
+
+    Point j (500,800);
+    Point k (150,800);
 
     color titleColor(0, 255, 0);     // Green
-    color backgroundColor(0, 0, 0);    // Black
+
     color playButtonColor(255, 0, 0);  // Red
     color playButtonTextColor(255, 255, 255); // White
 
@@ -60,6 +64,7 @@ int main(int argc, char ** argv){
     {
         g.update();
 
+
         if(g.kbhit()){
             switch(toupper(g.getKey())){
                 case 'C': g.clear();
@@ -67,21 +72,23 @@ int main(int argc, char ** argv){
             }
         }
         if(g.mouseClick()){
-            p = g.getMouseClick();
-            ball.setLocation(p);
-            g.clear();
+            //p = g.getMouseClick();
+            //ball.setLocation(p);
+            //g.clear();
         }
 
+        ball.setLocation(p);
+        ball.setPrevLocation(ball.getLocation());
 
         ball.display(g, false);
-        ball.move();
+        g.update();
+        //ball.move();
         ball.display(g, true);
 
 
-        //drawCircle(l, 50, playButtonColor, g);
-        block.drawBlock(p, 50, color1, g);
-        triangle.drawTriangle(g);
-
+        //block.drawBlock(g);
+        //triangle.drawTriangle(g);
+        circle.drawCircle(g);
 
     }
 
@@ -90,13 +97,6 @@ int main(int argc, char ** argv){
 
 //     drawTriangle(k, 50, titleColor, g);
 
-// draws 10 balls. pretty useless but ye
-    for (int i=0; i < 10; i++){
-        point randPoint (rand() % 800, rand() % 1000);
-        size = 50;
-        color ballColor(255, 23, 23);
-        drawCircle(randPoint, size, ballColor, g);
-    }
 
     return 0;
 }
