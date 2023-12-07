@@ -1,5 +1,5 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley,
-//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
 //File Name: menu.h
 //File Created: 11/14/2023
@@ -15,7 +15,8 @@
  * postcondition: drwas the text in a set point
  *
 */
-void writeText(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen);
+void writeText(int posX, int posY, 
+int SizeOfFont, SDL_Plotter& homeScreen);
 /*
  * description: writes the header text
  * return: void
@@ -23,5 +24,6 @@ void writeText(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen);
  * postcondition: writes the header to the set point
  *
 */
-void writeHeader(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen);
+void writeHeader(int posX, int posY, 
+int SizeOfFont, SDL_Plotter& homeScreen);
 
