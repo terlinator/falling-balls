@@ -47,7 +47,8 @@ int main(int argc, char **argv) {
 
     // BLOCK CREATION
     for (int i = 0; i < BLOCK_COUNT; i++) {
-        Point blockPosition(i * (OBJECT_SIZE) + 65, SCREEN_SIZE_HEIGHT - OBJECT_SIZE / 2);
+        Point blockPosition(i * (OBJECT_SIZE) + 65, 
+        SCREEN_SIZE_HEIGHT - OBJECT_SIZE / 2);
         // X's are spaced evenly, ys are at the bottom of the screen
         Block block(blockPosition, OBJECT_SIZE / 2, 1, objColor);
         blocks.push_back(block);
@@ -87,7 +88,8 @@ int main(int argc, char **argv) {
                     }
                     // Change direction
 
-                    ball.setForce(force(1.5, -PI / 2 + rand() % 100 / 100.0 * directionChange));
+                    ball.setForce(force(1.5, -PI / 2 + rand() 
+                        % 100 / 100.0 * directionChange));
 
                     // Play the collision sound
                     Mix_PlayChannel(-1, collisionSound, 0);
@@ -105,7 +107,8 @@ int main(int argc, char **argv) {
             if (ball.getLoc().y >= g.getRow() - ball.getRadius()) {
                 // Shift remaining blocks up by 80 units
                 for (int i = 0; i < BLOCK_COUNT; i++) {
-                    blocks[i].setPosition(Point(blocks[i].getPosition().x, blocks[i].getPosition().y - 80));
+                    blocks[i].setPosition(Point(blocks[i].getPosition().x, 
+                        blocks[i].getPosition().y - 80));
                 }
 
                 // Check if new row needs to be introduced
@@ -120,22 +123,26 @@ int main(int argc, char **argv) {
                 // Introduce a new row of blocks
                 if (introduceNewRow) {
                     for (int i = 0; i < BLOCK_COUNT; i++) {
-                        Point blockPosition(i * (OBJECT_SIZE) + 65, SCREEN_SIZE_HEIGHT - OBJECT_SIZE / 2);
+                        Point blockPosition(i * (OBJECT_SIZE) + 65, 
+                        SCREEN_SIZE_HEIGHT - OBJECT_SIZE / 2);
                         // X's are spaced evenly, ys are at the bottom of the screen
                         Block block(blockPosition, OBJECT_SIZE / 2, 1, objColor);
                         blocks.push_back(block);
                     }
                 }
 
-                ball.setForce(force(1.5, -PI / 2 + rand() % 100 / 100.0 * directionChange));
+                ball.setForce(force(1.5, -PI / 2 + rand() 
+                    % 100 / 100.0 * directionChange));
                 Mix_PlayChannel(-1, collisionSound, 0);
             }
             if (ball.getLoc().x >= g.getCol() - ball.getRadius()) { // Collisions with right wall
-                ball.setForce(force(1.5, -PI + rand() % 100 / 100.0 * directionChange));
+                ball.setForce(force(1.5, -PI + rand() 
+                    % 100 / 100.0 * directionChange));
                 Mix_PlayChannel(-1, collisionSound, 0);
             }
             if (ball.getLoc().x <= ball.getRadius()) {
-                ball.setForce(force(1.5, rand() % 100 / 100.0 * directionChange)); // Collisions with left wall
+                ball.setForce(force(1.5, rand() 
+                    % 100 / 100.0 * directionChange)); // Collisions with left wall
                 Mix_PlayChannel(-1, collisionSound, 0);
             }
             numUpdate++;
