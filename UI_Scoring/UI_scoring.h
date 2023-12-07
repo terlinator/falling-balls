@@ -1,21 +1,30 @@
 #ifndef GROUPPROJECT_UI_SCORING_H_
 #define GROUPPROJECT_UI_SCORING_H_
 #include <fstream>
+#include <vector>
+#include <sstream>
+#include <iostream>
 using namespace std;
 
-class scoreTracker{
-private:
+struct player {
+    player();
+    player(const string &, int);
+    void setScore(int);
+    int getScore() const;
+    static bool compareScores(const player&, const player&);
+
+    void updateLeaderboard(const string&, int);
+    void playGame();
+
+    string name;
     int score;
-
-
-public:
-
-    scoreTracker();
-    void incrementScore(int);
-    void displayScore(ostream&) const;
-
-//    double something(const scoreTracker&) const;
-
-    // scoreTracker midpoint(const scoreTracker&);
 };
+
+
+    // what i would type in main:
+        // playGame();
+
+        // Display the updated leaderboard
+        //displayLeaderboard();
+
 #endif GROUPPROJECT_UI_SCORING_H_

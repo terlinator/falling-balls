@@ -5,121 +5,166 @@
 		<Option title="GroupProject"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\SDL2\;CMake Files\..\..\..\..\usr\local\lib\cmake\SDL2_mixer\;"/>
+		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/ari/Desktop/falling-balls/cmake-build-debug"/>
+				<Option working_dir="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GroupProject">
-				<Option output="/Users/ari/Desktop/falling-balls/cmake-build-debug/GroupProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ari/Desktop/falling-balls/cmake-build-debug"/>
+				<Option output="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/GroupProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/ari/Desktop/falling-balls/SDL_Plotter"/>
-					<Add directory="/usr/local/Cellar/sdl2/2.28.5/include"/>
-					<Add directory="/usr/local/opt/sdl2_mixer/include/SDL2"/>
-					<Add directory="/usr/local/Cellar/sdl2/2.28.5/include/SDL2"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="C:/libs/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GroupProject/fast">
-				<Option output="/Users/ari/Desktop/falling-balls/cmake-build-debug/GroupProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ari/Desktop/falling-balls/cmake-build-debug"/>
+				<Option output="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/GroupProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/ari/Desktop/falling-balls/SDL_Plotter"/>
-					<Add directory="/usr/local/Cellar/sdl2/2.28.5/include"/>
-					<Add directory="/usr/local/opt/sdl2_mixer/include/SDL2"/>
-					<Add directory="/usr/local/Cellar/sdl2/2.28.5/include/SDL2"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="C:/libs/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 GroupProject/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/ari/Desktop/falling-balls/cmake-build-debug"/>
+				<Option working_dir="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/ari/Desktop/falling-balls/cmake-build-debug"/>
+				<Option working_dir="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ari/Desktop/falling-balls/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ari/Desktop/falling-balls/SDL_Plotter/SDL_Plotter.cpp">
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Blocks/Blocks.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="/Users/ari/Desktop/falling-balls/SDL_Plotter/SDL_Plotter.h">
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Blocks/Blocks.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="/Users/ari/Desktop/falling-balls/UI_Scoring/UI_score.h">
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Circle.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="/Users/ari/Desktop/falling-balls/UI_Scoring/UI_scoring.cpp">
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Circle.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="/Users/ari/Desktop/falling-balls/UI_Scoring/UI_scoring.h">
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Force/Force.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="/Users/ari/Desktop/falling-balls/main.cpp">
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Force/Force.h">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="/Users/ari/Desktop/falling-balls/CMakeLists.txt">
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Force/constants.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Letters/Letters.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Menu/menu.cpp">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Menu/menu.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/SDL_Plotter/SDL_Plotter.cpp">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/SDL_Plotter/SDL_Plotter.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Screen/screen.cpp">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Screen/screen.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Triangle.cpp">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Triangle.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/UI_Scoring/UI_scoring.cpp">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/UI_Scoring/UI_scoring.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/UI_Scoring/button.cpp">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/UI_Scoring/button.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/UI_Scoring/constants.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/UI_Scoring/scoreTracker.cpp">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/UI_Scoring/scoreTracker.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/ball/ball.cpp">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/ball/ball.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/main.cpp">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/point.h">
+			<Option target="GroupProject"/>
+		</Unit>
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/Users/ari/Desktop/falling-balls/../../../../usr/local/lib/cmake/SDL2/sdl2-config-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SDL2\"/>
-		</Unit>
-		<Unit filename="/Users/ari/Desktop/falling-balls/../../../../usr/local/lib/cmake/SDL2/sdl2-config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SDL2\"/>
-		</Unit>
-		<Unit filename="/Users/ari/Desktop/falling-balls/../../../../usr/local/lib/cmake/SDL2_mixer/sdl2_mixer-config-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SDL2_mixer\"/>
-		</Unit>
-		<Unit filename="/Users/ari/Desktop/falling-balls/../../../../usr/local/lib/cmake/SDL2_mixer/sdl2_mixer-config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SDL2_mixer\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

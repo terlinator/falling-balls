@@ -27,3 +27,12 @@ bool getMouseUp(int& x, int& y) - returns true if mouse button is up was clicked
 bool getMouseMotion(int& x, int& y)  - returns true if mouse is in motion and stores the cursor location in x and y
 
 void getMouseLocation(int& x, int& y) -  stores the cursor location in x and y
+
+
+//        if (g.kbhit()) {
+//            switch (toupper(g.getKey())) {
+//                case 'C':
+//                    g.clear();
+//                    break;
+//            }
+//        }

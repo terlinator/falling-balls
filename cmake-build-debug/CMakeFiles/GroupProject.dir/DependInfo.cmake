@@ -8,9 +8,18 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/ari/Desktop/falling-balls/SDL_Plotter/SDL_Plotter.cpp" "CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o" "gcc" "CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.o.d"
-  "/Users/ari/Desktop/falling-balls/UI_Scoring/UI_scoring.cpp" "CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o" "gcc" "CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.o.d"
-  "/Users/ari/Desktop/falling-balls/main.cpp" "CMakeFiles/GroupProject.dir/main.cpp.o" "gcc" "CMakeFiles/GroupProject.dir/main.cpp.o.d"
+  "C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Blocks/Blocks.cpp" "CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj" "gcc" "CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj.d"
+  "C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Circle.cpp" "CMakeFiles/GroupProject.dir/Circle.cpp.obj" "gcc" "CMakeFiles/GroupProject.dir/Circle.cpp.obj.d"
+  "C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Force/Force.cpp" "CMakeFiles/GroupProject.dir/Force/Force.cpp.obj" "gcc" "CMakeFiles/GroupProject.dir/Force/Force.cpp.obj.d"
+  "C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Menu/menu.cpp" "CMakeFiles/GroupProject.dir/Menu/menu.cpp.obj" "gcc" "CMakeFiles/GroupProject.dir/Menu/menu.cpp.obj.d"
+  "C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/SDL_Plotter/SDL_Plotter.cpp" "CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.obj" "gcc" "CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.obj.d"
+  "C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Screen/screen.cpp" "CMakeFiles/GroupProject.dir/Screen/screen.cpp.obj" "gcc" "CMakeFiles/GroupProject.dir/Screen/screen.cpp.obj.d"
+  "C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Triangle.cpp" "CMakeFiles/GroupProject.dir/Triangle.cpp.obj" "gcc" "CMakeFiles/GroupProject.dir/Triangle.cpp.obj.d"
+  "C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/UI_Scoring/UI_scoring.cpp" "CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.obj" "gcc" "CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.obj.d"
+  "C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/UI_Scoring/button.cpp" "CMakeFiles/GroupProject.dir/UI_Scoring/button.cpp.obj" "gcc" "CMakeFiles/GroupProject.dir/UI_Scoring/button.cpp.obj.d"
+  "C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/UI_Scoring/scoreTracker.cpp" "CMakeFiles/GroupProject.dir/UI_Scoring/scoreTracker.cpp.obj" "gcc" "CMakeFiles/GroupProject.dir/UI_Scoring/scoreTracker.cpp.obj.d"
+  "C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/ball/ball.cpp" "CMakeFiles/GroupProject.dir/ball/ball.cpp.obj" "gcc" "CMakeFiles/GroupProject.dir/ball/ball.cpp.obj.d"
+  "C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/main.cpp" "CMakeFiles/GroupProject.dir/main.cpp.obj" "gcc" "CMakeFiles/GroupProject.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

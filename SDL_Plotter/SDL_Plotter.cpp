@@ -1,3 +1,11 @@
+/*
+Authors: Briel F., Sterling M., Andrew M., Cameron H., Daniel E.
+Assignment Title: Group project: Falling Balls
+Assignment Description:
+Due Date: 12/6/23
+Date Created: 11/28/23
+Date Last Modified: 12/6/23
+ */
 #include "SDL_Plotter.h"
 
 //Threaded Sound Function
@@ -5,19 +13,19 @@
 static int Sound(void *data){
     param *p = (param*)data;
     p->running = true;
-    Mix_Chunk *gScratch = NULL;
-    gScratch = Mix_LoadWAV( p->name.c_str() );
+    //Mix_Chunk *gScratch = NULL;
+    //gScratch = Mix_LoadWAV( p->name.c_str() );
 
 
     while(p->running){
         SDL_mutexP( p->mut );
         SDL_CondWait(p->cond, p->mut);
-        Mix_PlayChannel( -1, gScratch, 0 );
+        // Mix_PlayChannel( -1, gScratch, 0 );
         p->play = false;
         SDL_mutexV(p->mut);
     }
 
-    Mix_FreeChunk( gScratch );
+    // Mix_FreeChunk( gScratch );
     p->running = false;
     return 0;
 }
@@ -52,7 +60,7 @@ SDL_Plotter::SDL_Plotter(int r, int c, bool WITH_SOUND){
     currentKeyStates = SDL_GetKeyboardState( NULL );
 
     //SOUND Thread Pool
-    Mix_OpenAudio( 44100, MIX_DEFAULT_FORMAT, 2, 2048 );
+    // Mix_OpenAudio( 44100, MIX_DEFAULT_FORMAT, 2, 2048 );
     soundCount = 0;
     update();
 }
