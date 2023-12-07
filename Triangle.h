@@ -26,25 +26,52 @@ class Triangle{
   /*
   *description: draws triangle to screen
   *return: point
-  *precondition: the circle exists
-  *postcondition: returns the point of the circle
+  *precondition: the the SDL plotter is valid
+  *postcondition: draws the triangle
   */
   void drawTriangle(SDL_Plotter&);
 
   /*
   *description: draws triangle to screen
   *return: point
-  *precondition: the circle exists
-  *postcondition: returns the point of the circle
+  *precondition: the triangle exists
+  *postcondition: returns the point of the triangle
   */
   Point getLoc() const;
-
+/*
+  *description: sets the location
+  *return: void
+  *precondition: the triangle exists
+  *postcondition: returns the point of the circle
+  */
   void setLoc(Point x);
-
+/*
+  *description: gets the side of the triangle
+  *return: int
+  *precondition: the the triangle is of positive size
+  *postcondition: returns the side length of the triangle
+  */
   int getSide() const;
+/*
+  *description: sets the side length of the triangle
+  *return: void
+  *precondition: the triangle exists
+  *postcondition: the triangle's side length is set
+  */
   void setSide(int x);
-
+/*
+  *description: gets the health of the triangle
+  *return: int
+  *precondition: the triangle hp is over 0
+  *postcondition: returns the health as an int
+  */
   int getHealth() const;
+/*
+  *description: sets the health of the triangle
+  *return:void
+  *precondition: the int given is over 0
+  *postcondition: the triangle's health is set
+  */
   void setHealth(int val);
 
   //bool collisionCheck(const Ball&);
