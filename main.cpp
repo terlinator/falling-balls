@@ -137,14 +137,16 @@ int main(int argc, char **argv) {
                     % 100 / 100.0 * directionChange));
                 Mix_PlayChannel(-1, collisionSound, 0);
             }
-            if (ball.getLoc().x >= g.getCol() - ball.getRadius()) { // Collisions with right wall
+            if (ball.getLoc().x >= g.getCol() - 
+                ball.getRadius()) { // Collisions with right wall
                 ball.setForce(force(1.5, -PI + rand() 
                     % 100 / 100.0 * directionChange));
                 Mix_PlayChannel(-1, collisionSound, 0);
             }
             if (ball.getLoc().x <= ball.getRadius()) {
                 ball.setForce(force(1.5, rand() 
-                    % 100 / 100.0 * directionChange)); // Collisions with left wall
+                    % 100 / 100.0 * directionChange)); 
+                // Collisions with left wall
                 Mix_PlayChannel(-1, collisionSound, 0);
             }
             numUpdate++;
