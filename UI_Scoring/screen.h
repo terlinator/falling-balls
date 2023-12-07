@@ -15,6 +15,13 @@
 #include <sstream>
 using namespace std;
 /*
+* description: draws the home page
+* return: void
+* precondition: must have access to SDL
+* postcondition: displays the home screen
+*/
+void drawStartScreen(SDL_Plotter& homeScreen);
+/*
  * description: draws the home screen
  * return: void
  * precondition: the SDL plotter is valid
