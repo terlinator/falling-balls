@@ -8,7 +8,36 @@
 //File Last Edited: 12/05/2023
 #include "screen.h"
 
-void drawHomeScreen(SDL_Plotter& homeScreen){
+void drawStartScreen(SDL_Plotter& g) {
+    button startButton(385, 380, 182, 50);
+    button LeaderboardButton(270, 454, 408, 50);
+    button optionButton(335, 535, 260, 50);
+    button creditsButton(335, 630, 260, 50);
+    button backButton(30, 50, 120, 50);
+    button pauseButton(30, 50, 120, 50);
+
+    // draw the buttons
+    startButton.draw(g);
+    LeaderboardButton.draw(g);
+    optionButton.draw(g);
+    creditsButton.draw(g);
+    // Title screen
+    writeFallingBalls(130, 100, 12, g);
+    writeStart(280, 390, 4, g);
+
+    for (int i = 0; i <= 1000; i += 100) {
+        drawCircle({i, 10}, 15, {0, 0, 255}, g);
+        drawCircle({i, 990}, 15, {0, 0, 255}, g);
+        for (int j = 0; j <= 1000; j += 100) {
+            drawCircle({10, j}, 15, {0, 0, 255}, g);
+            drawCircle({990, j}, 15, {0, 0, 255}, g);
+        }
+    }
+    drawCircle({850, 800}, 50, {255, 0, 0}, g); // red
+    drawRectangle({500, 800}, 50, {255, 0, 0}, g);
+    drawCircle({150, 800}, 50, {255, 0, 0}, g);
+    // drawCircle({850, 800}, 50, {255, 0, 0}, g); // red
+    g.update();
 
 }
 
@@ -84,90 +113,5 @@ color c, SDL_Plotter& g){
                 g.plotPixel(round(loc.x+i),round(loc.y+j),c);
             }
         }
-    }
-}
-void writeText(int posX, int posY, int SizeOfFont, 
-SDL_Plotter& homeScreen) {
-    ifstream infile;
-    string line, value;
-    int col, r, g, b, row = 0;
-
-    infile.open("sheet.csv");
-    while (getline(infile, line)) {
-        stringstream ss(line);
-        col = 0;
-         while (getline(ss, value, ',')) {
-            int pixelValue = stoi(value);
-            int pixelSize = SizeOfFont;
-
-            r = 0;
-            g = 0;
-            b = 0;
-
-            for(int i = 0; i <= row; i++) {
-                b += 35;
-                r += 5;
-                for (int l = 0; l <= col; l++) {
-                    if (pixelValue == 0) {
-                        r = 255;
-                        g = 255;
-                        b = 255;
-                    }
-                }
-            }
-
-            // Draw the pixel
-            for (int x = 0; x < pixelSize; ++x) {
-                for (int y = 0; y < pixelSize; ++y) {
-                    homeScreen.plotPixel(posX + col * pixelSize + x, 
-                        posY + row * pixelSize + y, r, g, b);
-                }
-            }
-
-            col++;
-        }
-
-        row++;
-    }
-}
-
-void writeHeader(int posX, int posY, 
-int SizeOfFont, SDL_Plotter& homeScreen) {
-    ifstream infile;
-    string line, value;
-    int col, r, g, b, row = 0;
-
-    infile.open("start.csv");
-    while (getline(infile, line)) {
-        stringstream ss(line);
-        col = 0;
-        while (getline(ss, value, ',')) {
-            int pixelValue = stoi(value);
-            int pixelSize = SizeOfFont;
-
-            // Prints black if number is 1, white for anything else
-            if(pixelValue == 1){
-                r = 0;
-                g = 0;
-                b = 0;
-            }
-            else{
-                r = 255;
-                g = 255;
-                b = 255;
-            }
-
-            // Draw the pixel
-            for (int x = 0; x < pixelSize; ++x) {
-                for (int y = 0; y < pixelSize; ++y) {
-                    homeScreen.plotPixel(posX + col * pixelSize + x, 
-                        posY + row * pixelSize + y, r, g, b);
-                }
-            }
-
-            col++;
-        }
-
-        row++;
     }
 }
