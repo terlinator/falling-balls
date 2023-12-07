@@ -31,8 +31,10 @@ int main(int argc, char **argv) {
     SDL_Plotter g(SCREEN_SIZE_HEIGHT, SCREEN_SIZE_WIDTH, true);
 
     // Create
-    Mix_Chunk *collisionSound = Mix_LoadWAV("/Users/cameronhardin/Desktop/CSI1430/Hardin_Group_Project/Hardin_Group_Project/BallCollision.wav");
-    Mix_Chunk *gameSoundtrack = Mix_LoadWAV("/Users/cameronhardin/Desktop/CSI1430/Hardin_Group_Project/Hardin_Group_Project/gameSoundtrack.wav");
+    Mix_Chunk *collisionSound = Mix_LoadWAV
+    ("/Users/cameronhardin/Desktop/CSI1430/Hardin_Group_Project/Hardin_Group_Project/BallCollision.wav");
+    Mix_Chunk *gameSoundtrack = Mix_LoadWAV
+    ("/Users/cameronhardin/Desktop/CSI1430/Hardin_Group_Project/Hardin_Group_Project/gameSoundtrack.wav");
     g.initSound("BallCollision.wav");
     g.initSound("gameSoundtrack.wav");
 
