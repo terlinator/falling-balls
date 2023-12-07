@@ -1,5 +1,5 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley,
-//    Cameron Hardin, Sterling Matthews, Andrew Meador
+//Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
 //Assignment Description: Create a triangle header
 //File Name: Circle.h
@@ -23,7 +23,8 @@ class Circle{
   public:
   Circle();
 
-  Circle(Point, int, int, color); //Loc, radius, health, color
+  Circle(Point, int, int, color); 
+  //Loc, radius, health, color
 /*
  * description: draws a Circle
  * return: void
@@ -44,7 +45,8 @@ class Circle{
  * description: sets the location of the circle
  * return:  void
  * precondition:  the point given is valid
- * postcondition:  sets the location of the circle to point x
+ * postcondition:  sets the location 
+ of the circle to point x
  *
 */
   void setLoc(Point x);
