@@ -1,5 +1,5 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley,
-//    Cameron Hardin, Sterling Matthews, Andrew Meador
+//Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
 //Assignment Description: Create a circle definitions
 //File Name: Blocks.h
@@ -21,7 +21,8 @@ class Block{
 
   public:
   Block();
-  Block(Point, int, int, color); //Loc, sideLength, health, color
+  Block(Point, int, int, color); 
+  //Loc, sideLength, health, color
   /*
  * description: draw the block
  * return: void
