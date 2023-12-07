@@ -53,38 +53,38 @@ void writeToScreen(const string& filename, int posX, int posY, int SizeOfFont,
 }
 void writeFallingBalls(int posX, int posY, int SizeOfFont,
                        SDL_Plotter& homeScreen){
-    writeToScreen("Letters/CSV sheets/sheet.csv", posX,
+    writeToScreen("Sheets/sheet.csv", posX,
                   posY, SizeOfFont, homeScreen);
 }
 
 void writeStart(int posX, int posY, int SizeOfFont,
                 SDL_Plotter& homeScreen) {
-    writeToScreen("Letters/CSV sheets/start.csv",
+    writeToScreen("Sheets/start.csv",
                   posX, posY, SizeOfFont, homeScreen);
 }
 
 void writeOptions(int posX, int posY, int SizeOfFont,
                   SDL_Plotter& homeScreen) {
-    writeToScreen("Letters/CSV sheets/options.csv",
+    writeToScreen("Sheets/options.csv",
                   posX, posY, SizeOfFont, homeScreen);
 }
 void writeLeaderboard(int posX, int posY, int SizeOfFont,
                       SDL_Plotter& homeScreen){
-    writeToScreen("Letters/CSV sheets/Leaderboard.csv",
+    writeToScreen("Sheets/Leaderboard.csv",
                   posX, posY, SizeOfFont, homeScreen);
 }
 
 void writeCredits(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen){
-    writeToScreen("Letters/CSV sheets/credits.csv", posX, posY, SizeOfFont,
+    writeToScreen("Sheets/credits.csv", posX, posY, SizeOfFont,
                   homeScreen);
 }
 
 void writeBack(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen){
-    writeToScreen("Letters/CSV sheets/back.csv", posX, posY, SizeOfFont,
+    writeToScreen("Sheets/back.csv", posX, posY, SizeOfFont,
                   homeScreen);
 }
 
 void writePause(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen){
-    writeToScreen("Letters/CSV sheets/pause.csv", posX, posY, SizeOfFont,
+    writeToScreen("Sheets/pause.csv", posX, posY, SizeOfFont,
                   homeScreen);
 
