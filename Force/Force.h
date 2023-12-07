@@ -1,7 +1,8 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley, 
-//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
-//Assignment Description: creates a force object that can act on other objects
+//Assignment Description: creates 
+//a force object that can act on other objects
 //File Name: Force.h
 //File Created: 11/14/2023
 //File Last Edited: 12/06/2023
@@ -30,7 +31,8 @@ public:
     //description: constructor with parameters
     //return: force object
     //precondition: two doubles exist
-    //postcondition: a force object with non-default values is created
+    //postcondition: a force object with 
+    //non-default values is created
     force(double m, double d);
 
     //description: sets magnitude member
@@ -67,7 +69,8 @@ public:
     //description: calculates and applies force to an object
     //return: force object
     //precondition: two force objects exist
-    //postcondition: members of two force objects are calculated together
+    //postcondition: members of two force 
+    //objects are calculated together
     force add(const force& other) const;
     //description: gives force to an object
     //return: void
