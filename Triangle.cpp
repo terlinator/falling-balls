@@ -80,7 +80,8 @@ void Triangle::drawTriangle(SDL_Plotter& g) {
     double triangleX = getLoc().x;
     double triangleY = getLoc().y;
 
-    //Find distance between the centers of the ball and the triangle
+    //Find distance between the 
+    //centers of the ball and the triangle
     double distance = sqrt(pow(ballX - triangleX, 2) + 
     pow(ballY - triangleY, 2));
 
