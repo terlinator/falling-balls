@@ -1,5 +1,5 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley,
-//    Cameron Hardin, Sterling Matthews, Andrew Meador
+//Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
 //Assignment Description: Create a circle definitions
 //File Name: Blocks.cpp
@@ -21,7 +21,8 @@ Block::Block() {
   this->color1 = color(0,0,0);
 }
 
-Block::Block(Point p, int size, int health, color c) {
+Block::Block(Point p, int size, 
+int health, color c) {
   this->loc.x = p.x;
   this->loc.y = p.y;
 
@@ -80,7 +81,8 @@ void Block::drawBlock(SDL_Plotter& g) {
 
 
 bool Block::collisionCheck(const Ball& circle) {
-    // Calculate the distance between the centers of the ball and the block
+    // Calculate the distance between 
+    //the centers of the ball and the block
     double distanceX = abs(circle.getLoc().x - this->getLoc().x);
     double distanceY = abs(circle.getLoc().y - this->getLoc().y);
 
@@ -101,7 +103,8 @@ bool Block::collisionCheck(const Ball& circle) {
     }
 
     // Check if the ball is within the corner bounds of the block
-    double cornerDistance = pow(distanceX - sideLength / 2, 2) + pow(distanceY - sideLength / 2, 2);
+    double cornerDistance = pow(distanceX - sideLength / 2, 2) + 
+    pow(distanceY - sideLength / 2, 2);
     return cornerDistance <= pow(circle.getRadius(), 2);
 }
 
