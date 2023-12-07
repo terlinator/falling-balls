@@ -5,9 +5,10 @@
 //File Name: ball.cpp
 //File Created: 11/14/2023
 //File Last Edited: 12/05/2023
-#include "ball.h"
-#include "constants.h"
-#include "force.h"
+#include " ball.h"
+#include "../Force/Force.h"
+#include "../SDL_Plotter/SDL_Plotter.h"
+#include "../point.h"
 
 using namespace std;
 

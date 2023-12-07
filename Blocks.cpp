@@ -2,8 +2,8 @@
 
 #include "blocks.h"
 #include "Point.h"
-#include "SDL_Plotter.hpp"
-#include "ball.h"
+#include "SDL_Plotter/SDL_Plotter.h"
+#include "ball/ ball.h"
 //#include the sdl plotter
 
 Block::Block() {

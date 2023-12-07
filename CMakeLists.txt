@@ -16,4 +16,4 @@ link_directories("C:/libs/lib")
 add_executable(GroupProject main.cpp SDL_Plotter/SDL_Plotter.cpp
                 UI_Scoring/screen.cpp ball/ball.cpp Blocks.cpp
                 Force/Force.cpp)
-
+target_link_libraries(GroupProject SDL2main SDL2 SDL2_mixer)

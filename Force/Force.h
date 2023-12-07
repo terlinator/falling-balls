@@ -83,4 +83,5 @@ public:
 };
 
 const force GRAVITY(0.1, PI/2);
-#endif FORCE_H_
+
+#endif //FORCE_H_

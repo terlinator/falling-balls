@@ -8,7 +8,7 @@
 #ifndef CONSTANTS_H_INCLUDED
 #define CONSTANTS_H_INCLUDED
 
-#include "force.h"
+#include "Force/Force.h"
 
 const int SCREEN_SIZE_WIDTH = 800;
 const int SCREEN_SIZE_HEIGHT = 500;

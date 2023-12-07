@@ -9,9 +9,9 @@
 #define BALL_H_INCLUDED
 
 #include <cmath>
-#include "SDL_Plotter.hpp"
-#include "force.h"
-#include "Point.h"
+#include "../point.h"
+#include "../SDL_Plotter/SDL_Plotter.h"
+#include "../Force/Force.h"
 
 using namespace std;
 

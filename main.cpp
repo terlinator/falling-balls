@@ -8,16 +8,16 @@
 #include <iostream>
 //#include "UI_Scoring/UI_Scoring.h"
 #include "constants.h"
-#include "screen.h"
+#include "UI_Scoring/screen.h"
 #include <cstdlib>
-#include "ball.h"
+#include "ball/ ball.h"
 #include "blocks.h"
 #include "Triangle.h"
 //#include "Circle.h"
-#include "SDL_Plotter.hpp"
+#include "SDL_Plotter/SDL_Plotter.h"
 #include <SDL2/SDL_mixer.h>
 #include "Point.h"
-#include "force.h"
+#include "Force/Force.h"
 
 using namespace std;
 
@@ -28,8 +28,8 @@ int main(int argc, char** argv) {
     roundCounter++;
     
     SDL_Plotter g(SCREEN_SIZE_WIDTH, SCREEN_SIZE_HEIGHT, true);
-    Mix_Chunk* collisionSound = Mix_LoadWAV("/Users/cameronhardin/Desktop/CSI1430/Hardin_Group_Project/Hardin_Group_Project/BallCollision.wav");
-    g.initSound("BallCollision.wav");
+//    Mix_Chunk* collisionSound = Mix_LoadWAV("/Users/cameronhardin/Desktop/CSI1430/Hardin_Group_Project/Hardin_Group_Project/BallCollision.wav");
+//    g.initSound("BallCollision.wav");
 
     //Data Abstraction
     char key;
@@ -43,7 +43,7 @@ int main(int argc, char** argv) {
     Point l(80, 800);
     color color1(0, 255, 0);
     Point tpoint(80, 200);
-    Triangle triangle(tpoint, 20, 1, color1);
+//    Triangle triangle(tpoint, 20, 1, color1);
     //Circle circle(l, 20, 1, color1);
     unsigned long long int numUpdate = 0;
     double directionChange = rand() % 10 / 100.0;
@@ -117,7 +117,7 @@ int main(int argc, char** argv) {
         for (int i = 0; i < BLOCK_COUNT; i++) {
             if (blocks[i].collisionCheck(ball)) { // If that ball collides
                 ball.setForce(force(1.5, -PI / 2 + directionChange));
-                Mix_PlayChannel(-1, collisionSound, 0);
+//                Mix_PlayChannel(-1, collisionSound, 0);
             }
         }
 
@@ -147,15 +147,15 @@ int main(int argc, char** argv) {
             parameter is the name of the sound chunk, and 0 is the number
             of times it should loop. All of this is in the mixer
             documentation*/
-            Mix_PlayChannel(-1, collisionSound, 0);
+//            Mix_PlayChannel(-1, collisionSound, 0);
         }
         if (ball.getLoc().x >= g.getCol() - ball.getRadius()) { // Collisions with right wall
             ball.setForce(force(1.5, -PI + directionChange));
-            Mix_PlayChannel(-1, collisionSound, 0);
+//            Mix_PlayChannel(-1, collisionSound, 0);
         }
         if (ball.getLoc().x <= ball.getRadius()) {
             ball.setForce(force(1.5, -PI / 2 - directionChange)); // Collisions with left wall
-            Mix_PlayChannel(-1, collisionSound, 0);
+//            Mix_PlayChannel(-1, collisionSound, 0);
         }
         numUpdate++;
     }

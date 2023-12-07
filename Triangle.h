@@ -9,8 +9,8 @@
 #ifndef TRIANGLE_H_INCLUDED
 #define TRIANGLE_H_INCLUDED
 
-#include "SDL_Plotter.hpp"
 //#include "ball.h"
+#include "SDL_Plotter/SDL_Plotter.h"
 #include "Point.h"
 
 class Triangle{
