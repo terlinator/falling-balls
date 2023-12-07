@@ -8,8 +8,20 @@
 #include <iostream>
 
 #include "screen.h"
-
+/*
+ * description: writes the text to a point
+ * return: void
+ * precondition: ints provided are valid
+ * postcondition: drwas the text in a set point
+ *
+*/
 void writeText(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen);
-
+/*
+ * description: writes the header text
+ * return: void
+ * precondition: the ints provided are valid
+ * postcondition: writes the header to the set point
+ *
+*/
 void writeHeader(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen);
 
