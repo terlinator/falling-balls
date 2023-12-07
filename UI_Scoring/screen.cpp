@@ -1,7 +1,8 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley,
-//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
-//Assignment Description: Creates the definitions for the screen functions
+//Assignment Description: Creates the 
+//definitions for the screen functions
 //File Name: screen.cpp
 //File Created: 12/5/2023
 //File Last Edited: 12/05/2023
@@ -11,14 +12,17 @@ void drawHomeScreen(SDL_Plotter& homeScreen){
 
 }
 
-void drawPixel(int posX, int posY, int width, int height, int R, int G, int B, SDL_Plotter& homeScreen){
+void drawPixel(int posX, int posY, int width, 
+int height, int R, int G, int B, 
+SDL_Plotter& homeScreen){
     while(posX < SCREEN_SIZE_WIDTH && posY < SCREEN_SIZE_HEIGHT){
         homeScreen.plotPixel(width, height, R, G, B);
     }
 }
 
 // starts at zero to capture the entire screen
-void drawBackground(int width, int height, int R, int G, int B, SDL_Plotter& homeScreen){
+void drawBackground(int width, int height, 
+int R, int G, int B, SDL_Plotter& homeScreen){
     for(int i = 0; i <= width; i++){
         for(int j = 0; j <= height; j++){
                 homeScreen.plotPixel(width, height, R, G, B);
@@ -27,7 +31,9 @@ void drawBackground(int width, int height, int R, int G, int B, SDL_Plotter& hom
 }
 
 // starts at position x to only plot in the button size
-void drawButton(int posX, int posY, int width, int height, int R, int G, int B, SDL_Plotter& homeScreen){
+void drawButton(int posX, int posY, int width, 
+int height, int R, int G, int B, 
+SDL_Plotter& homeScreen){
     for(int x = posX; x < width; x++){
         for(int y = posY; y < height; y++){
             homeScreen.plotPixel(width, height, R, G, B);
@@ -35,17 +41,22 @@ void drawButton(int posX, int posY, int width, int height, int R, int G, int B, 
     }
 }
 
-void drawNewBall(int posX, int posY, int width, int height, int R, int G, int B, SDL_Plotter& homeScreen){
+void drawNewBall(int posX, int posY, int width, 
+int height, int R, int G, int B, 
+SDL_Plotter& homeScreen){
     for(int i = 0; i <= 2; i++){
         // drawCircle(loc,size, c, g);
     }
 
 }
-void drawTitle(int posX, int posY, int SizeOfFont, char word, int R, int G, int B, SDL_Plotter& homeScreen){
+void drawTitle(int posX, int posY, int SizeOfFont, 
+char word, int R, int G, int B, 
+SDL_Plotter& homeScreen){
 
 }
 
-void drawCircle(point loc, int size, color c, SDL_Plotter& g){
+void drawCircle(point loc, int size, 
+color c, SDL_Plotter& g){
     for(double i = -size; i <= size;i+=0.1){
         for(double j = -size; j <= size; j+=0.1){
             if(i*i + j*j <= size*size){
@@ -54,7 +65,8 @@ void drawCircle(point loc, int size, color c, SDL_Plotter& g){
         }
     }
 }
-void drawRectangle(point loc, int size, color c, SDL_Plotter& g){
+void drawRectangle(point loc, int size, 
+color c, SDL_Plotter& g){
     for(double i = -size; i <= size;i+=0.1){
         for(double j = -size; j <= size; j+=0.1){
             if(i+i + j+j <= size*size){
@@ -64,7 +76,8 @@ void drawRectangle(point loc, int size, color c, SDL_Plotter& g){
     }
 
 }
-void drawTriangle(point loc, int size, color c, SDL_Plotter& g){
+void drawTriangle(point loc, int size, 
+color c, SDL_Plotter& g){
     for(double i = -size; i <= size;i+=0.01){
         for(double j = -size; j <= size; j+=0.01){
             if((i*i + j+j) <= size+size){
@@ -73,7 +86,8 @@ void drawTriangle(point loc, int size, color c, SDL_Plotter& g){
         }
     }
 }
-void writeText(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen) {
+void writeText(int posX, int posY, int SizeOfFont, 
+SDL_Plotter& homeScreen) {
     ifstream infile;
     string line, value;
     int col, r, g, b, row = 0;
@@ -105,7 +119,8 @@ void writeText(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen) {
             // Draw the pixel
             for (int x = 0; x < pixelSize; ++x) {
                 for (int y = 0; y < pixelSize; ++y) {
-                    homeScreen.plotPixel(posX + col * pixelSize + x, posY + row * pixelSize + y, r, g, b);
+                    homeScreen.plotPixel(posX + col * pixelSize + x, 
+                        posY + row * pixelSize + y, r, g, b);
                 }
             }
 
@@ -116,7 +131,8 @@ void writeText(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen) {
     }
 }
 
-void writeHeader(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen) {
+void writeHeader(int posX, int posY, 
+int SizeOfFont, SDL_Plotter& homeScreen) {
     ifstream infile;
     string line, value;
     int col, r, g, b, row = 0;
@@ -144,7 +160,8 @@ void writeHeader(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen) {
             // Draw the pixel
             for (int x = 0; x < pixelSize; ++x) {
                 for (int y = 0; y < pixelSize; ++y) {
-                    homeScreen.plotPixel(posX + col * pixelSize + x, posY + row * pixelSize + y, r, g, b);
+                    homeScreen.plotPixel(posX + col * pixelSize + x, 
+                        posY + row * pixelSize + y, r, g, b);
                 }
             }
 
