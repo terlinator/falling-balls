@@ -1,3 +1,10 @@
+//Group Twelve Names: Daniel Esquivel, Briel Finley,
+//    Cameron Hardin, Sterling Matthews, Andrew Meador
+//Project Name: Falling Balls
+//Assignment Description: Create a circle definitions
+//File Name: point.h
+//File Created: 11/14/2023
+//File Last Edited: 12/06/2023
 #ifndef POINT_H_INCLUDED
 #define POINT_H_INCLUDED
 
