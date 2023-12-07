@@ -1,5 +1,5 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley,
-//    Cameron Hardin, Sterling Matthews, Andrew Meador
+//Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
 //Assignment Description: Create a triangle header
 //File Name: Triangle.cpp
@@ -18,7 +18,8 @@ Triangle::Triangle() {
   this->color1 = color(0,0,0);
 }
 
-Triangle::Triangle(Point p, int size, int health, color c) {
+Triangle::Triangle(Point p, int size, 
+int health, color c) {
   this->loc.x = p.x;
   this->loc.y = p.y;
 
@@ -64,7 +65,8 @@ void Triangle::drawTriangle(SDL_Plotter& g) {
         int xEnd = loc.x + i;
 
         for (int x = xStart; x <= xEnd; x++) {
-            g.plotPixel(x, loc.y + i, color1.R, color1.G, color1.B);
+            g.plotPixel(x, loc.y + i, color1.R, 
+              color1.G, color1.B);
         }
     }
 }
@@ -79,7 +81,8 @@ void Triangle::drawTriangle(SDL_Plotter& g) {
     double triangleY = getLoc().y;
 
     //Find distance between the centers of the ball and the triangle
-    double distance = sqrt(pow(ballX - triangleX, 2) + pow(ballY - triangleY, 2));
+    double distance = sqrt(pow(ballX - triangleX, 2) + 
+    pow(ballY - triangleY, 2));
 
     //Check if the distance <= to ball radius + 1/2 triangle side
     return distance <= (ball.getRadius() + getSide() / 2.0);
