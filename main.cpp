@@ -6,14 +6,14 @@
 //File Last Edited: 12/05/2023, Andrew Meador
 
 #include <iostream>
-//#include "UI_Scoring/UI_Scoring.h"
+//#include UI/UIscoring
+//Add back in the menu and stuff
 #include "constants.h"
 #include "screen.h"
 #include <cstdlib>
 #include "ball.h"
 #include "blocks.h"
 #include "Triangle.h"
-//#include "Circle.h"
 #include "SDL_Plotter.hpp"
 #include <SDL2/SDL_mixer.h>
 #include "Point.h"
@@ -21,144 +21,126 @@
 
 using namespace std;
 
+int main(int argc, char **argv) {
+    // Instantiate plotter with sound
+    SDL_Plotter g(SCREEN_SIZE_HEIGHT, SCREEN_SIZE_WIDTH, true);
 
-
-int roundCounter = 0;
-int main(int argc, char** argv) {
-    roundCounter++;
-    
-    SDL_Plotter g(SCREEN_SIZE_WIDTH, SCREEN_SIZE_HEIGHT, true);
-    Mix_Chunk* collisionSound = Mix_LoadWAV("/Users/cameronhardin/Desktop/CSI1430/Hardin_Group_Project/Hardin_Group_Project/BallCollision.wav");
+    // Create
+    Mix_Chunk *collisionSound = Mix_LoadWAV("/Users/cameronhardin/Desktop/CSI1430/Hardin_Group_Project/Hardin_Group_Project/BallCollision.wav");
+    Mix_Chunk *gameSoundtrack = Mix_LoadWAV("/Users/cameronhardin/Desktop/CSI1430/Hardin_Group_Project/Hardin_Group_Project/gameSoundtrack.wav");
     g.initSound("BallCollision.wav");
+    g.initSound("gameSoundtrack.wav");
 
-    //Data Abstraction
     char key;
     Ball ball;
-    Point p(80, 80);
-    color c;
-    int size;
-    Uint32 RGB;
-    //Block block;
-    color backgroundColor(0, 0, 0); // Black
-    Point l(80, 800);
-    color color1(0, 255, 0);
-    Point tpoint(80, 200);
-    Triangle triangle(tpoint, 20, 1, color1);
-    //Circle circle(l, 20, 1, color1);
+    color objColor(0, 0, 255);
     unsigned long long int numUpdate = 0;
-    double directionChange = rand() % 10 / 100.0;
+    int directionChange = 1;
 
-    Point j(500, 800);
-    Point k(150, 800);
+    const int BLOCK_COUNT = 4;  // ADD BLOCKS HERE
+    vector<Block> blocks;       // Tracks all blocks
 
-    color titleColor(0, 255, 0);      // Green
-
-    color playButtonColor(255, 0, 0);     // Red
-    color playButtonTextColor(255, 255, 255); // White
-
-    //(position x, position y, font size, screen)
-    //writeHeader(130,100, 12, g);
-    //writeText(400,400,4,g);
-
-    for (int round = 0; round < 10; round++) {
-        // drawCircle(l, 50, playButtonColor, g);
-        // drawCircle(j, 50, playButtonColor, g);
-        // drawCircle(k, 50, playButtonColor, g);
-        // block.drawBlock(g);
-        // triangle.drawTriangle(g);
+    // BLOCK CREATION
+    for (int i = 0; i < BLOCK_COUNT; i++) {
+        Point blockPosition(i * (OBJECT_SIZE) + 65, SCREEN_SIZE_HEIGHT - OBJECT_SIZE / 2);
+        // X's are spaced evenly, ys are at the bottom of the screen
+        Block block(blockPosition, OBJECT_SIZE / 2, 1, objColor);
+        blocks.push_back(block);
     }
 
-    /* NOTE:
-    * This code under while loop properly creates a ball,
-    * but any other objects in the loop WILL slow down
-    * the program depending on how they are drawn.
-    */
-    ball.setLoc(p);
     while (!g.getQuit()) {
+        if (rand() % 2 == 1) {
+            directionChange *= -1;
+        }
+
         if (g.kbhit()) {
             switch (toupper(g.getKey())) {
             case 'C':
                 g.clear();
                 break;
             }
-        }
-        if (g.mouseClick()) {
-            // p = g.getMouseClick();
-            // ball.setLocation(p);
-            // g.clear();
-        }
+        } else {
+            if (g.mouseClick()) {
+                // p = g.getMouseClick();
+                // ball.setLocation(p);
+                // g.clear();
+            }
 
-        //ball.setPrevLoc(ball.getLoc());
+            if ((numUpdate % 7) == 0) {
+                ball.display(g, false);
 
-        if ((numUpdate % 1) == 0) {
-            ball.display(g, false);
+                g.update();
+                ball.display(g, true);
+            }
 
-            g.update();
-            ball.display(g, true);
-        }
-        
-        //CREATE BLOCKS
-        const int BLOCK_COUNT = 4;
-        color objColor(0, 0, 255);
-        vector<Block> blocks;
+            // BLOCK DISPLAY
+            for (int i = 0; i < BLOCK_COUNT; i++) {
+                if (blocks[i].collisionCheck(ball)) {
+                    // Decrease health on collision
+                    if (blocks[i].getHealth() > 0) {
+                        blocks[i].setHealth(blocks[i].getHealth() - 1);
+                    }
+                    // Change direction
 
-        const double SPACING_SCALE = 0.1;  // Adjust the scale factor as needed
+                    ball.setForce(force(1.5, -PI / 2 + rand() % 100 / 100.0 * directionChange));
 
-        const int BLOCK_SPACING = SPACING_SCALE * SCREEN_SIZE_WIDTH / (BLOCK_COUNT + 1);
+                    // Play the collision sound
+                    Mix_PlayChannel(-1, collisionSound, 0);
+                }
+                // Only draw blocks if it has health
+                if (blocks[i].getHealth() > 0) {
+                    blocks[i].drawBlock(g);
+                } else {
+                    blocks[i].erase(g);
+                }
+            }
+            // END BLOCKS
 
-        for (int i = 0; i < BLOCK_COUNT; i++) {
-            Point blockPosition((i + 1) * BLOCK_SPACING + i * (SCREEN_SIZE_WIDTH - BLOCK_COUNT * BLOCK_SPACING) / BLOCK_COUNT + OBJECT_SIZE / 2,
-                                 g.getRow() - (OBJECT_SIZE / 2));
-            Block block(blockPosition, OBJECT_SIZE / 2, 1, objColor);
-            block.drawBlock(g);
-            blocks.push_back(block);
-        }
+            // When ball passes floor
+            if (ball.getLoc().y >= g.getRow() - ball.getRadius()) {
+                // Shift remaining blocks up by 80 units
+                for (int i = 0; i < BLOCK_COUNT; i++) {
+                    blocks[i].setPosition(Point(blocks[i].getPosition().x, blocks[i].getPosition().y - 80));
+                }
 
-        for (int i = 0; i < BLOCK_COUNT; i++) {
-            if (blocks[i].collisionCheck(ball)) { // If that ball collides
-                ball.setForce(force(1.5, -PI / 2 + directionChange));
+                // Check if new row needs to be introduced
+                bool introduceNewRow = true;
+                for (int i = 0; i < BLOCK_COUNT; i++) {
+                    if (blocks[i].getPosition().y < 80) {
+                        introduceNewRow = false;
+                        break;
+                    }
+                }
+
+                // Introduce a new row of blocks
+                if (introduceNewRow) {
+                    for (int i = 0; i < BLOCK_COUNT; i++) {
+                        Point blockPosition(i * (OBJECT_SIZE) + 65, SCREEN_SIZE_HEIGHT - OBJECT_SIZE / 2);
+                        // X's are spaced evenly, ys are at the bottom of the screen
+                        Block block(blockPosition, OBJECT_SIZE / 2, 1, objColor);
+                        blocks.push_back(block);
+                    }
+                }
+
+                ball.setForce(force(1.5, -PI / 2 + rand() % 100 / 100.0 * directionChange));
                 Mix_PlayChannel(-1, collisionSound, 0);
             }
-        }
-
-
-
-        //END BLOCKS
-
-        force f = ball.getForce();
-        f.apply(GRAVITY);
-        ball.setForce(f);
-        ball.move();
-
-        // block.drawBlock(g);
-        // triangle.drawTriangle(g);
-        // circle.drawCircle(g);
-        /*if(circle.collisionCheck(ball)) {
-            if(rand() % 2 == 0) {
-                directionChange *= -1.0;    //Randomly makes bounce left or right
+            if (ball.getLoc().x >= g.getCol() - ball.getRadius()) { // Collisions with right wall
+                ball.setForce(force(1.5, -PI + rand() % 100 / 100.0 * directionChange));
+                Mix_PlayChannel(-1, collisionSound, 0);
             }
-            ball.setForce(force(1.5, -PI/2 + directionChange));     //Scale magnitude to gravity
-        }*/
+            if (ball.getLoc().x <= ball.getRadius()) {
+                ball.setForce(force(1.5, rand() % 100 / 100.0 * directionChange)); // Collisions with left wall
+                Mix_PlayChannel(-1, collisionSound, 0);
+            }
+            numUpdate++;
 
-        if (ball.getLoc().y >= g.getRow() - ball.getRadius()) { // Collisions with floor
-            ball.setForce(force(1.5, -PI / 2 + directionChange));
-
-            /*NOTE: -1 just makes it play no matter what, middle
-            parameter is the name of the sound chunk, and 0 is the number
-            of times it should loop. All of this is in the mixer
-            documentation*/
-            Mix_PlayChannel(-1, collisionSound, 0);
+            force f = ball.getForce();
+            f.apply(GRAVITY);
+            ball.setForce(f);
+            ball.move();
         }
-        if (ball.getLoc().x >= g.getCol() - ball.getRadius()) { // Collisions with right wall
-            ball.setForce(force(1.5, -PI + directionChange));
-            Mix_PlayChannel(-1, collisionSound, 0);
-        }
-        if (ball.getLoc().x <= ball.getRadius()) {
-            ball.setForce(force(1.5, -PI / 2 - directionChange)); // Collisions with left wall
-            Mix_PlayChannel(-1, collisionSound, 0);
-        }
-        numUpdate++;
     }
 
-return 0;
+    return 0;
 }
