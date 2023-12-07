@@ -259,7 +259,17 @@ CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj: \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_heap.h \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_queue.h \
- C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/point.h \
+ C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/ball/ball.h \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
  C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/math.h \
+ C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/SDL_Plotter/SDL_Plotter.h \
+ C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Force/Force.h \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/fstream \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecvt.h \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+ C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/fstream.tcc \
+ C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Force/constants.h \
+ C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/point.h \
+ C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/point.h \
  C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/SDL_Plotter/SDL_Plotter.h

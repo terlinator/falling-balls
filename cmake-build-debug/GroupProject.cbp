@@ -18,7 +18,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="GroupProject">
-				<Option output="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/GroupProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option output="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/======GroupProject.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -40,7 +40,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="GroupProject/fast">
-				<Option output="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/GroupProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option output="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug/======GroupProject.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -82,10 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Blocks/Blocks.cpp">
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Blocks.cpp">
 			<Option target="GroupProject"/>
 		</Unit>
-		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Blocks/Blocks.h">
+		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Blocks.h">
 			<Option target="GroupProject"/>
 		</Unit>
 		<Unit filename="C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/Circle.cpp">

@@ -14,18 +14,17 @@
 //#include "Color.h"
 #include "ball/ball.h"
 
-
 class Circle{
-private:
-    Point loc;
-    int health;
-    int radius;
-    color _color;
+  private:
+  Point loc;
+  int health;
+  int radius;
+  color color1;
 
-public:
-    Circle();
+  public:
+  Circle();
 
-    Circle(Point, int, int, color); //Loc, radius, health, color
+  Circle(point, int, int, color); //Loc, radius, health, color
 /*
  * description: draws a Circle
  * return: void
@@ -33,7 +32,7 @@ public:
  * postcondition: returns nothing
  *
 */
-    void drawCircle(SDL_Plotter&);
+  void drawCircle(SDL_Plotter&);
 /*
  * description: gets the location of the circle
  * return:   point
@@ -41,7 +40,7 @@ public:
  * postcondition:   returns the point of the circle
  *
 */
-    Point getLocation();
+  Point getLoc() const;
 /*
  * description: sets the location of the circle
  * return:  void
@@ -49,7 +48,7 @@ public:
  * postcondition:  sets the location of the circle to point x
  *
 */
-    void setLocation(point x);
+  void setLoc(Point x);
 /*
  * description: gets the radius of the circle
  * return: int
@@ -57,7 +56,7 @@ public:
  * postcondition: returns an int
  *
 */
-    int getRadius();
+  int getRadius() const;
 /*
  * description: sets the radius of the circle
  * return: void
@@ -65,7 +64,7 @@ public:
  * postcondition: sets the radius
  *
 */
-    void setRadius(int x);
+  void setRadius(int x);
 /*
  * description: gets the health of the returns
  * return: int
@@ -73,7 +72,7 @@ public:
  * postcondition: returns an int
  *
 */
-    int getHealth();
+  int getHealth() const;
 /*
  * description:   sets the ball health
  * return:   void
@@ -81,7 +80,7 @@ public:
  * postcondition: the ball's health value is set
  *
 */
-    void setHealth(int val);
+  void setHealth(int val);
 /*
  * description: checks if the ball is colliding
  * return: bool
@@ -91,5 +90,7 @@ public:
 */
     bool collisionCheck(const Ball&);
 };
+
+
 
 #endif //Circle_h

@@ -21,5 +21,6 @@ const int SIZE = 1000;
 const int MATRIX_WIDTH = 6;
 const int MATRIX_LENGTH= 8;
 const int ASCII_A = 65;
+const int OBJECT_SIZE = 300;
 
 #endif //GROUPPROJECT_CONSTANTS_H

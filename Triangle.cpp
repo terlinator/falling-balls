@@ -1,5 +1,5 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley,
-//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//    Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
 //Assignment Description: Create a triangle header
 //File Name: Triangle.cpp
@@ -10,21 +10,21 @@
 
 //Constructors
 Triangle::Triangle() {
-    this->loc.x = 80;
-    this->loc.y = 80;
+  this->loc.x = 80;
+  this->loc.y = 80;
 
-    this->health = 1;
-    this->sideLength = 10;
-    this->color1 = color(0,0,0);
+  this->health = 1;
+  this->sideLength = 10;
+  this->color1 = color(0,0,0);
 }
 
 Triangle::Triangle(Point p, int size, int health, color c) {
-    this->loc.x = p.x;
-    this->loc.y = p.y;
+  this->loc.x = p.x;
+  this->loc.y = p.y;
 
-    this->sideLength = size;
-    this->health = health;
-    this->color1 = color(c.R,c.G,c.B);
+  this->sideLength = size/2;
+  this->health = health;
+  this->color1 = color(c.R,c.G,c.B);
 }
 
 //Location Functions
@@ -33,7 +33,7 @@ Point Triangle::getLoc() const {
 }
 
 void Triangle::setLoc(Point p) {
-    this->loc = p;
+  this->loc = p;
 }
 
 //Side Functions
@@ -45,6 +45,7 @@ void Triangle::setSide(int x) {
     this->sideLength = x;
 }
 
+
 //Health Functions
 int Triangle::getHealth() const {
     return this->health;
@@ -54,30 +55,39 @@ void Triangle::setHealth(int value) {
     this->health = value;
 }
 
+
 //Plots an already constructed triangle given a plotter
-void Triangle::drawTriangle(SDL_Plotter& g) {
-    int size = getSide();
-    Point loc = getLoc();
-
-    int xleft = 0;
-    int xright = 0;
-    //int y = 0;
-
-    for (int i = 0; i < size; i++) {          // loops through rows
-        for (int j = 0; j < size * 2; j++) {  // loops through columns adjusted based on row
-            xleft = loc.x + j - size;
-            xright = loc.x - j + size;
-
-            if (xleft >= loc.x - i && xleft <= loc.x + i) {
-                g.plotPixel(xleft, loc.y + i, color1.R, color1.G, color1.B);   //Left side
-            }
-
-            if (xright >= loc.x - i && xright <= loc.x + i) {
-                g.plotPixel(xright, loc.y + i, color1.R, color1.G, color1.B);  //Right side
-            }
-        }
-    }
-}
+//void Triangle::drawTriangle(SDL_Plotter& g) {
+//    int size = getSide();
+//    Point loc = getLoc();
+//
+//    int xleft = 0;
+//    int xright = 0;
+//    //int y = 0;
+//
+//    for (int i = 0; i < size; i++) {          // loops through rows
+//        for (int j = 0; j < size * 2; j++) {  // loops through columns adjusted based on row
+//            xleft = loc.x + j - size;
+//            xright = loc.x - j + size;
+//
+//            if (xleft >= loc.x - i && xleft <= loc.x + i) {
+//                g.plotPixel(xleft, loc.y + i, color1.R, color1.G, color1.B);   //Left side
+//            }
+//
+//            if (xright >= loc.x - i && xright <= loc.x + i) {
+//                g.plotPixel(xright, loc.y + i, color1.R, color1.G, color1.B);  //Right side
+//            }
+//=======
+//    for (int i = 0; i < size; i++) { // loops through rows
+//        int xStart = loc.x - i;
+//        int xEnd = loc.x + i;
+//
+//        for (int x = xStart; x <= xEnd; x++) {
+//            g.plotPixel(x, loc.y + i, color1.R, color1.G, color1.B);
+//>>>>>>> main
+//        }
+//    }
+//}
 
 //Return true if current triangle and ball hit
 /*bool Triangle::collisionCheck(const Ball& ball) {

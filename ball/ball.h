@@ -16,22 +16,15 @@ Date Last Modified: 12/6/23
 
 using namespace std;
 
-struct point_t{
-    double x, y;
-    point_t(){
-        x = y = 0;
-    }
 
-    point_t(double x, double y){
-        this->x = x;
-        this->y = y;
-    }
-};
 
 class Ball {
 private:
     // location
-    point loc;
+    Point loc;
+
+    // previous location
+    Point prevLoc;
 
     // color
     color _color;
@@ -44,16 +37,19 @@ public:
     Ball();
 
     void setColor(color);
-    Point setLocation(point);
+    void setLoc(Point);
+    void setPrevLoc(Point);
     void setRadius(int);
+    void setForce(force);
 
     color getColor() const;
-    const point getLocation() const;
+    const Point getLoc() const;
+    const Point getPrevLoc() const;
     const int getRadius() const;
+    const force getForce() const;
 
     void display(SDL_Plotter&, bool = false);
     void move();
-
 
 };
 

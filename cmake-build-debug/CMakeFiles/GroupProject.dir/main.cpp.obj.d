@@ -286,6 +286,7 @@ CMakeFiles/GroupProject.dir/main.cpp.obj: \
  C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\Screen/screen.h \
  C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\Blocks/Blocks.h \
  C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/SDL_Plotter/SDL_Plotter.h \
+ C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/ball/ball.h \
  C:/Users/balex/Desktop/falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj/point.h \
  C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\Triangle.h \
  C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\SDL_Plotter/SDL_Plotter.h \

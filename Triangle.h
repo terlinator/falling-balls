@@ -14,40 +14,40 @@
 #include "point.h"
 
 class Triangle{
-private:
-    Point loc;
-    int health;
-    int sideLength;
-    color color1;
+  private:
+  Point loc;
+  int health;
+  int sideLength;
+  color color1;
 
-public:
-    Triangle();
-    Triangle(Point, int, int, color); //Loc, size, health, color
-    /*
-    *description: draws triangle to screen
-    *return: point
-    *precondition: the circle exists
-    *postcondition: returns the point of the circle
-    */
-    void drawTriangle(SDL_Plotter&);
+  public:
+  Triangle();
+  Triangle(Point, int, int, color); //Loc, size, health, color
+  /*
+  *description: draws triangle to screen
+  *return: point
+  *precondition: the circle exists
+  *postcondition: returns the point of the circle
+  */
+  void drawTriangle(SDL_Plotter&);
 
-    /*
-    *description: draws triangle to screen
-    *return: point
-    *precondition: the circle exists
-    *postcondition: returns the point of the circle
-    */
-    Point getLoc() const;
+  /*
+  *description: draws triangle to screen
+  *return: point
+  *precondition: the circle exists
+  *postcondition: returns the point of the circle
+  */
+  Point getLoc() const;
 
-    void setLoc(Point x);
+  void setLoc(Point x);
 
-    int getSide() const;
-    void setSide(int x);
+  int getSide() const;
+  void setSide(int x);
 
-    int getHealth() const;
-    void setHealth(int val);
+  int getHealth() const;
+  void setHealth(int val);
 
-    //bool collisionCheck(const Ball&);
+  //bool collisionCheck(const Ball&);
 };
 
 #endif // TRIANGLE_H_INCLUDED

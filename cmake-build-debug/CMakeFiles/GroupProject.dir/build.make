@@ -188,20 +188,20 @@ CMakeFiles/GroupProject.dir/UI_Scoring/scoreTracker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/UI_Scoring/scoreTracker.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\UI_Scoring\scoreTracker.cpp -o CMakeFiles\GroupProject.dir\UI_Scoring\scoreTracker.cpp.s
 
-CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
-CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj: CMakeFiles/GroupProject.dir/includes_CXX.rsp
-CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj: ../Blocks/Blocks.cpp
-CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj: CMakeFiles/GroupProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj -MF CMakeFiles\GroupProject.dir\Blocks\Blocks.cpp.obj.d -o CMakeFiles\GroupProject.dir\Blocks\Blocks.cpp.obj -c C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\Blocks\Blocks.cpp
+CMakeFiles/GroupProject.dir/Blocks.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
+CMakeFiles/GroupProject.dir/Blocks.cpp.obj: CMakeFiles/GroupProject.dir/includes_CXX.rsp
+CMakeFiles/GroupProject.dir/Blocks.cpp.obj: ../Blocks.cpp
+CMakeFiles/GroupProject.dir/Blocks.cpp.obj: CMakeFiles/GroupProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GroupProject.dir/Blocks.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GroupProject.dir/Blocks.cpp.obj -MF CMakeFiles\GroupProject.dir\Blocks.cpp.obj.d -o CMakeFiles\GroupProject.dir\Blocks.cpp.obj -c C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\Blocks.cpp
 
-CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\Blocks\Blocks.cpp > CMakeFiles\GroupProject.dir\Blocks\Blocks.cpp.i
+CMakeFiles/GroupProject.dir/Blocks.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GroupProject.dir/Blocks.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\Blocks.cpp > CMakeFiles\GroupProject.dir\Blocks.cpp.i
 
-CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\Blocks\Blocks.cpp -o CMakeFiles\GroupProject.dir\Blocks\Blocks.cpp.s
+CMakeFiles/GroupProject.dir/Blocks.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GroupProject.dir/Blocks.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\Blocks.cpp -o CMakeFiles\GroupProject.dir\Blocks.cpp.s
 
 CMakeFiles/GroupProject.dir/Triangle.cpp.obj: CMakeFiles/GroupProject.dir/flags.make
 CMakeFiles/GroupProject.dir/Triangle.cpp.obj: CMakeFiles/GroupProject.dir/includes_CXX.rsp
@@ -258,7 +258,7 @@ GroupProject_OBJECTS = \
 "CMakeFiles/GroupProject.dir/Screen/screen.cpp.obj" \
 "CMakeFiles/GroupProject.dir/UI_Scoring/button.cpp.obj" \
 "CMakeFiles/GroupProject.dir/UI_Scoring/scoreTracker.cpp.obj" \
-"CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj" \
+"CMakeFiles/GroupProject.dir/Blocks.cpp.obj" \
 "CMakeFiles/GroupProject.dir/Triangle.cpp.obj" \
 "CMakeFiles/GroupProject.dir/Menu/menu.cpp.obj" \
 "CMakeFiles/GroupProject.dir/Circle.cpp.obj"
@@ -266,27 +266,27 @@ GroupProject_OBJECTS = \
 # External object files for target GroupProject
 GroupProject_EXTERNAL_OBJECTS =
 
-GroupProject.exe: CMakeFiles/GroupProject.dir/main.cpp.obj
-GroupProject.exe: CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.obj
-GroupProject.exe: CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.obj
-GroupProject.exe: CMakeFiles/GroupProject.dir/Force/Force.cpp.obj
-GroupProject.exe: CMakeFiles/GroupProject.dir/ball/ball.cpp.obj
-GroupProject.exe: CMakeFiles/GroupProject.dir/Screen/screen.cpp.obj
-GroupProject.exe: CMakeFiles/GroupProject.dir/UI_Scoring/button.cpp.obj
-GroupProject.exe: CMakeFiles/GroupProject.dir/UI_Scoring/scoreTracker.cpp.obj
-GroupProject.exe: CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj
-GroupProject.exe: CMakeFiles/GroupProject.dir/Triangle.cpp.obj
-GroupProject.exe: CMakeFiles/GroupProject.dir/Menu/menu.cpp.obj
-GroupProject.exe: CMakeFiles/GroupProject.dir/Circle.cpp.obj
-GroupProject.exe: CMakeFiles/GroupProject.dir/build.make
-GroupProject.exe: CMakeFiles/GroupProject.dir/linklibs.rsp
-GroupProject.exe: CMakeFiles/GroupProject.dir/objects1.rsp
-GroupProject.exe: CMakeFiles/GroupProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable GroupProject.exe"
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/main.cpp.obj
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/UI_Scoring/UI_scoring.cpp.obj
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/SDL_Plotter/SDL_Plotter.cpp.obj
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/Force/Force.cpp.obj
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/ball/ball.cpp.obj
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/Screen/screen.cpp.obj
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/UI_Scoring/button.cpp.obj
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/UI_Scoring/scoreTracker.cpp.obj
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/Blocks.cpp.obj
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/Triangle.cpp.obj
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/Menu/menu.cpp.obj
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/Circle.cpp.obj
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/build.make
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/linklibs.rsp
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/objects1.rsp
+$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe: CMakeFiles/GroupProject.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\balex\Desktop\falling-ballsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable ======GroupProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GroupProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/GroupProject.dir/build: GroupProject.exe
+CMakeFiles/GroupProject.dir/build: $(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)$(EQUALS)GroupProject.exe
 .PHONY : CMakeFiles/GroupProject.dir/build
 
 CMakeFiles/GroupProject.dir/clean:

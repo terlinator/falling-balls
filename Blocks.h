@@ -1,33 +1,28 @@
-/*
-Authors: Briel F., Sterling M., Andrew M., Cameron H., Daniel E.
-Assignment Title: Group project: Falling Balls
-Assignment Description:
-Due Date: 12/6/23
-Date Created: 11/28/23
-Date Last Modified: 12/6/23
- */
-#include "../SDL_Plotter/SDL_Plotter.h"
-#include "../ball/ball.h"
-#include "../point.h"
+#ifndef BLOCK_H_INCLUDED
+#define BLOCK_H_INCLUDED
+
+#include "Point.h"
+#include "SDL_Plotter/SDL_Plotter.h"
+#include "ball/ball.h"
 
 class Block{
-private:
-    Point loc;
-    int sideLength;
-    int health;
-    color color1;
+  private:
+  Point loc;
+  int sideLength;
+  int health;
+  color color1;
 
-public:
-    Block();
-    Block(Point, int, int, color); //Loc, sideLength, health, color
-    /*
-   * description: draw the block
-   * return: void
-   * precondition: SDL plotter works
-   * postcondition: draws the block
-   *
-  */
-    void drawBlock(SDL_Plotter&);
+  public:
+  Block();
+  Block(Point, int, int, color); //Loc, sideLength, health, color
+  /*
+ * description: draw the block
+ * return: void
+ * precondition: SDL plotter works
+ * postcondition: draws the block
+ *
+*/
+  void drawBlock(SDL_Plotter&);
 /*
  * description: gets the location
  * return: point
@@ -35,7 +30,7 @@ public:
  * postcondition: gives the point of the block in x,y
  *
 */
-    Point getLoc() const;
+  Point getLoc() const;
 /*
  * description: sets the location ofthe block
  * return: void
@@ -43,7 +38,7 @@ public:
  * postcondition: will set the block's location
  *
 */
-    void setLoc(Point x);
+  void setLoc(Point x);
 /*
  * description: gets the side length of the block
  * return: int
@@ -51,7 +46,7 @@ public:
  * postcondition: returns the size of the square
  *
 */
-    int getSide() const;
+  int getSide() const;
 /*
  * description: sets the blocks side length
  * return: void
@@ -59,7 +54,7 @@ public:
  * postcondition: sets the blocks SIZE
  *
 */
-    void setSide(int x);
+  void setSide(int x);
 /*
  * description: gets the blocks health
  * return: int
@@ -67,7 +62,7 @@ public:
  * postcondition: the health is returned
  *
 */
-    int getHealth() const;
+  int getHealth() const;
 /*
  * description: sets the block's health
  * return: void
@@ -75,7 +70,9 @@ public:
  * postcondition: sets the health of the block
  *
 */
-    void setHealth(int val);
+  void setHealth(int val);
 
-    bool collisionCheck(const Ball&);
+  bool collisionCheck(const Ball&);
 };
+
+#endif // BLOCK_H_INCLUDED

@@ -128,29 +128,29 @@ GroupProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/build
 .PHONY : GroupProject/fast
 
-Blocks/Blocks.obj: Blocks/Blocks.cpp.obj
-.PHONY : Blocks/Blocks.obj
+Blocks.obj: Blocks.cpp.obj
+.PHONY : Blocks.obj
 
 # target to build an object file
-Blocks/Blocks.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj
-.PHONY : Blocks/Blocks.cpp.obj
+Blocks.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Blocks.cpp.obj
+.PHONY : Blocks.cpp.obj
 
-Blocks/Blocks.i: Blocks/Blocks.cpp.i
-.PHONY : Blocks/Blocks.i
+Blocks.i: Blocks.cpp.i
+.PHONY : Blocks.i
 
 # target to preprocess a source file
-Blocks/Blocks.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.i
-.PHONY : Blocks/Blocks.cpp.i
+Blocks.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Blocks.cpp.i
+.PHONY : Blocks.cpp.i
 
-Blocks/Blocks.s: Blocks/Blocks.cpp.s
-.PHONY : Blocks/Blocks.s
+Blocks.s: Blocks.cpp.s
+.PHONY : Blocks.s
 
 # target to generate assembly for a file
-Blocks/Blocks.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.s
-.PHONY : Blocks/Blocks.cpp.s
+Blocks.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GroupProject.dir\build.make CMakeFiles/GroupProject.dir/Blocks.cpp.s
+.PHONY : Blocks.cpp.s
 
 Circle.obj: Circle.cpp.obj
 .PHONY : Circle.obj
@@ -425,9 +425,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... GroupProject
-	@echo ... Blocks/Blocks.obj
-	@echo ... Blocks/Blocks.i
-	@echo ... Blocks/Blocks.s
+	@echo ... Blocks.obj
+	@echo ... Blocks.i
+	@echo ... Blocks.s
 	@echo ... Circle.obj
 	@echo ... Circle.i
 	@echo ... Circle.s

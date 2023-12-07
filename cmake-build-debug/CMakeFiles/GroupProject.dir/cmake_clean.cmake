@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj"
-  "CMakeFiles/GroupProject.dir/Blocks/Blocks.cpp.obj.d"
+  "======GroupProject.exe"
+  "======GroupProject.exe.manifest"
+  "======GroupProject.pdb"
+  "CMakeFiles/GroupProject.dir/Blocks.cpp.obj"
+  "CMakeFiles/GroupProject.dir/Blocks.cpp.obj.d"
   "CMakeFiles/GroupProject.dir/Circle.cpp.obj"
   "CMakeFiles/GroupProject.dir/Circle.cpp.obj.d"
   "CMakeFiles/GroupProject.dir/Force/Force.cpp.obj"
@@ -23,9 +26,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/GroupProject.dir/ball/ball.cpp.obj.d"
   "CMakeFiles/GroupProject.dir/main.cpp.obj"
   "CMakeFiles/GroupProject.dir/main.cpp.obj.d"
-  "GroupProject.exe"
-  "GroupProject.exe.manifest"
-  "GroupProject.pdb"
   "libGroupProject.dll.a"
 )
 

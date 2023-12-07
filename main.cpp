@@ -20,17 +20,12 @@ Date Last Modified: 12/6/23
 #include "Letters/Letters.h"
 using namespace std;
 
+void runBallGame(SDL_Plotter& g);
+
 
 int main(int argc, char ** argv) {
     SDL_Plotter g(SCREEN_SIZE_WIDTH, SCREEN_SIZE_HEIGHT);
-    char key;
-//     Ball ball;
-    Point p;
-    color c;
-    int size;
-    Uint32 RGB;
 
-    // Print the string using the letters
     button startButton(385, 380, 182, 50);
     button leaderboardButton(270, 454, 408, 50);
     button optionButton(335, 535, 260, 50);
@@ -64,6 +59,13 @@ int main(int argc, char ** argv) {
             creditsButton.setIsClickable(false);
             leaderboardButton.setIsClickable(false);
             optionButton.setIsClickable(false);
+            runBallGame(g);
+            startButton.setIsClickable(true);
+            creditsButton.setIsClickable(true);
+            leaderboardButton.setIsClickable(true);
+            optionButton.setIsClickable(true);
+
+            drawStartScreen(g);
         }
         if (creditsButton.isClicked(x) && creditsButton.isClickable()) {
             g.clear();
@@ -105,17 +107,73 @@ int main(int argc, char ** argv) {
             g.update();
 
         }
-        g.update();
+            g.update();
     }
-//    for (int i = 0; i < 10; i++) {
-//        point randPoint(rand() % 800, rand() % 1000);
-//        size = 50;
-//        color ballColor = {255, 23, 23};
-//        drawCircle(randPoint, size, ballColor, g);
-//    }
-
     return 0;
 }
 
+void runBallGame(SDL_Plotter& g) {
+//    Mix_Chunk* collisionSound = Mix_LoadWAV("BallCollision.wav");
+//    g.initSound("BallCollision.wav");
 
+    // Initialize game variables
+    Ball ball;
+    Point p(80, 80);
+    color objColor(0, 0, 255);
+    double directionChange = rand() % 10 / 100.0;
+    ball.setLoc(p);
+
+    const int BLOCK_COUNT = 4;
+    vector<Block> blocks;
+    const double SPACING_SCALE = 0.1;
+    const int BLOCK_SPACING = SPACING_SCALE * SCREEN_SIZE_WIDTH / (BLOCK_COUNT + 1);
+
+    // Create blocks
+    for (int i = 0; i < BLOCK_COUNT; i++) {
+        Point blockPosition((i + 1) * BLOCK_SPACING + i * (SCREEN_SIZE_WIDTH - BLOCK_COUNT * BLOCK_SPACING) / BLOCK_COUNT + OBJECT_SIZE / 2,
+                            g.getRow() - (OBJECT_SIZE / 2));
+        Block block(blockPosition, OBJECT_SIZE / 2, 1, objColor);
+        blocks.push_back(block);
+    }
+
+    // Game loop
+    unsigned long long int numUpdate = 0;
+    while (!g.getQuit()) {
+        point x = g.getMouseClick();
+
+        button backButton(30, 50, 120, 50);
+        backButton.draw(g);\
+        writeBack(45, 65, 3, g);
+
+        if (backButton.isClicked(x)){
+            g.clear();
+            drawStartScreen(g);
+            return;
+        }
+        if ((numUpdate % 1) == 0) {
+            ball.display(g, false);
+            g.update();
+            ball.display(g, true);
+        }
+
+        for (auto& block : blocks) {
+            block.drawBlock(g);
+            if (block.collisionCheck(ball)) {
+                ball.setForce(force(1.5, -PI / 2 + directionChange));
+//                Mix_PlayChannel(-1, collisionSound, 0);
+            }
+        }
+
+        // Apply gravity and move ball
+        force f = ball.getForce();
+        f.apply(GRAVITY);
+        ball.setForce(f);
+        ball.move();
+
+
+        numUpdate++;
+    }
+
+//    Mix_FreeChunk(collisionSound);
+}
 
