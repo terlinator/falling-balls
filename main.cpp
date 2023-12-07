@@ -1,7 +1,11 @@
-//Group Twelve Names: Daniel Esquivel, Briel Finley,
-//    Cameron Hardin, Sterling Matthews, Andrew Meador
+//Group Twelve Names: 
+//Daniel Esquivel   - Menu Design
+//Briel Finley      - UI and Fonts
+//Cameron Hardin    - Physics and Sound
+//Sterling Matthews - Documentation and objects
+//Andrew Meador     - Objects and Physics
 //Project Name: Falling Balls
-//Assignment Description: makes the ball game
+//Assignment Description: Creates and runs the ball game
 //File Name: main.cpp
 //File Created: 11/14/2023
 //File Last Edited: 12/06/2023
