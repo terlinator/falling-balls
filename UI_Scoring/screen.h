@@ -29,7 +29,8 @@ void drawHomeScreen(SDL_Plotter& homeScreen);
  * postcondition: draws the background
  *
 */
-void drawBackground(int width, int height, int R, int G, int B, SDL_Plotter& homeScreen);
+void drawBackground(int width, int height, 
+int R, int G, int B, SDL_Plotter& homeScreen);
 /*
  * description: draws a button at the given point
  * return: void
@@ -37,7 +38,8 @@ void drawBackground(int width, int height, int R, int G, int B, SDL_Plotter& hom
  * postcondition: draws a button
  *
 */
-void drawButton(int posX, int posY, int width, int height, int R, int G, int B, SDL_Plotter& homeScreen);
+void drawButton(int posX, int posY, int width, int height, 
+int R, int G, int B, SDL_Plotter& homeScreen);
 /*
  * description: draws a ball
  * return: void
@@ -45,7 +47,8 @@ void drawButton(int posX, int posY, int width, int height, int R, int G, int B, 
  * postcondition: draws a new ball at the given point
  *
 */
-void drawNewBall(int posX, int posY, int width, int height, int R, int G, int B, SDL_Plotter& homeScreen);
+void drawNewBall(int posX, int posY, int width, int height, 
+int R, int G, int B, SDL_Plotter& homeScreen);
 /*
  * description: draws a pixel at the point
  * return: void
@@ -53,7 +56,8 @@ void drawNewBall(int posX, int posY, int width, int height, int R, int G, int B,
  * postcondition: a pixel is drawn
  *
 */
-void drawPoint(int posX, int posY, int width, int height, int R, int G, int B, SDL_Plotter& homeScreen);
+void drawPoint(int posX, int posY, int width, int height,
+int R, int G, int B, SDL_Plotter& homeScreen);
 /*
  * description: writes the text given in set size
  * return: void
@@ -61,7 +65,8 @@ void drawPoint(int posX, int posY, int width, int height, int R, int G, int B, S
  * postcondition: writes the text
  *
 */
-void writeText(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen);
+void writeText(int posX, int posY, 
+int SizeOfFont, SDL_Plotter& homeScreen);
 /*
  * description: writes the header of the project
  * return: void
@@ -69,7 +74,8 @@ void writeText(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen);
  * postcondition: writes the header
  *
 */
-void writeHeader(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen);
+void writeHeader(int posX, int posY, 
+int SizeOfFont, SDL_Plotter& homeScreen);
 
 /*
  * description: draws the circle at a point
@@ -78,7 +84,8 @@ void writeHeader(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen);
  * postcondition: draws the circle
  *
 */
-void drawCircle(point loc, int size, color c, SDL_Plotter& g);
+void drawCircle(point loc, 
+int size, color c, SDL_Plotter& g);
 
 /*
  * description: draws the rectangle at given point
@@ -87,7 +94,8 @@ void drawCircle(point loc, int size, color c, SDL_Plotter& g);
  * postcondition: draws the rectangle at point
  *
 */
-void drawRectangle(point loc, int size, color c, SDL_Plotter& g);
+void drawRectangle(point loc, 
+int size, color c, SDL_Plotter& g);
 
 // triangle shape
 /*
@@ -97,6 +105,7 @@ void drawRectangle(point loc, int size, color c, SDL_Plotter& g);
  * postcondition: draws the triangle
  *
 */
-void drawTriangle(point loc, int size, color c, SDL_Plotter& g);
+void drawTriangle(point loc, int size, 
+color c, SDL_Plotter& g);
 
 #endif // SCREEN_H_
