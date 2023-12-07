@@ -1,7 +1,8 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley, 
-//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
-//Assignment Description: creates a force object that can act on other objects
+//Assignment Description: creates a force 
+//object that can act on other objects
 //File Name: Force.h
 //File Created: 11/14/2023
 //File Last Edited: 12/06/2023
