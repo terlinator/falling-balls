@@ -70,12 +70,12 @@ void writeOptions(int posX, int posY, int SizeOfFont,
 }
 void writeLeaderboard(int posX, int posY, int SizeOfFont,
                       SDL_Plotter& homeScreen){
-    writeToScreen("Sheets/Leaderboard.csv",
+    writeToScreen("Sheets/LeaderBoard.csv",
                   posX, posY, SizeOfFont, homeScreen);
 }
 
 void writeCredits(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen){
-    writeToScreen("Sheets/credits.csv", posX, posY, SizeOfFont,
+    writeToScreen("Sheets/Credits.csv", posX, posY, SizeOfFont,
                   homeScreen);
 }
 
