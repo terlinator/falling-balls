@@ -14,7 +14,8 @@
 #include <iostream>
 using namespace std;
 // M_PI wasn't working so I just included a constant for PI
-const double PI = 3.14159265358979323846264338327950;
+const double PI = 
+3.14159265358979323846264338327950;
 class force{
 private:
     double magnitude;
