@@ -1,5 +1,5 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley,
-//    Cameron Hardin, Sterling Matthews, Andrew Meador
+//Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
 //Assignment Description: Create a circle definitions
 //File Name: Circle.cpp
@@ -19,7 +19,8 @@ Circle::Circle() {
   this->color1 = color(0,0,0);
 }
 
-Circle::Circle(point p, int radius, int health, color c) {
+Circle::Circle(point p, int radius, 
+int health, color c) {
   this->loc.x = p.x;
   this->loc.y = p.y;
 
@@ -61,7 +62,8 @@ void Circle::drawCircle(SDL_Plotter& g) {
     for (int x = -radius; x <= radius; x++) {
         for (int y = -radius; y <= radius; y++) {
             if (sqrt(pow(x, 2) + pow(y, 2)) <= radius) {
-                g.plotPixel(x + getLoc().x, y + getLoc().y, color1.R, color1.G, color1.B);
+                g.plotPixel(x + getLoc().x, y + getLoc().y, 
+                  color1.R, color1.G, color1.B);
             }
         }
     }
@@ -75,7 +77,8 @@ bool Circle::collisionCheck(const Ball& ball) {
     double circleY = getLoc().y;
 
     //Find distance between the centers of the balls
-    double distance = sqrt(pow(ballX - circleX, 2) + pow(ballY - circleY, 2));
+    double distance = sqrt(pow(ballX - circleX, 2) + 
+    pow(ballY - circleY, 2));
 
     //Check if the distance <= to ball radius + 1/2 triangle side
     return distance <= (ball.getRadius() + getRadius() / 2.0);
