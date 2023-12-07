@@ -1,5 +1,5 @@
 //Group Twelve Names: Daniel Esquivel, Briel Finley,
-//	Cameron Hardin, Sterling Matthews, Andrew Meador
+//Cameron Hardin, Sterling Matthews, Andrew Meador
 //Project Name: Falling Balls
 //File Name: menu.cpp
 //File Created: 11/14/2023
@@ -7,7 +7,8 @@
 
 #include <iostream>
 
-void writeText(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen) {
+void writeText(int posX, int posY, int SizeOfFont, 
+SDL_Plotter& homeScreen) {
     ifstream infile;
     string line, value;
     int col, r, g, b, row = 0;
@@ -35,7 +36,8 @@ void writeText(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen) {
             // Draw the pixel
             for (int x = 0; x < pixelSize; ++x) {
                 for (int y = 0; y < pixelSize; ++y) {
-                    homeScreen.plotPixel(posX + col * pixelSize + x, posY + row * pixelSize + y, r, g, b);
+                    homeScreen.plotPixel(posX + col * pixelSize + x, 
+                        posY + row * pixelSize + y, r, g, b);
                 }
             }
 
@@ -46,7 +48,8 @@ void writeText(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen) {
     }
 }
 
-void writeHeader(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen) {
+void writeHeader(int posX, int posY, int SizeOfFont, 
+SDL_Plotter& homeScreen) {
     ifstream infile;
     string line, value;
     int col, r, g, b, row = 0;
@@ -74,7 +77,8 @@ void writeHeader(int posX, int posY, int SizeOfFont, SDL_Plotter& homeScreen) {
             // Draw the pixel
             for (int x = 0; x < pixelSize; ++x) {
                 for (int y = 0; y < pixelSize; ++y) {
-                    homeScreen.plotPixel(posX + col * pixelSize + x, posY + row * pixelSize + y, r, g, b);
+                    homeScreen.plotPixel(posX + col * pixelSize + x, 
+                        posY + row * pixelSize + y, r, g, b);
                 }
             }
 
