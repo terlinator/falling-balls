@@ -20,6 +20,7 @@ Date Last Modified: 12/6/23
 #include "Letters/Letters.h"
 using namespace std;
 
+
 int main(int argc, char ** argv) {
     SDL_Plotter g(SCREEN_SIZE_WIDTH, SCREEN_SIZE_HEIGHT);
     char key;
@@ -31,7 +32,7 @@ int main(int argc, char ** argv) {
 
     // Print the string using the letters
     button startButton(385, 380, 182, 50);
-    button LeaderboardButton(270, 454, 408, 50);
+    button leaderboardButton(270, 454, 408, 50);
     button optionButton(335, 535, 260, 50);
     button creditsButton(335, 630, 260, 50);
     button backButton(30, 50, 120, 50);
@@ -45,29 +46,48 @@ int main(int argc, char ** argv) {
 
         g.update();
         point x = g.getMouseClick();
-        if (backButton.isClicked(x)){
+        if (backButton.isClicked(x) && backButton.isClickable()){
             g.clear();
             drawStartScreen(g);
+            startButton.setIsClickable(true);
+            creditsButton.setIsClickable(true);
+            leaderboardButton.setIsClickable(true);
+            optionButton.setIsClickable(true);
+            g.update();
         }
-        if (startButton.isClicked(x)) {
+        if (startButton.isClicked(x) && startButton.isClickable()) {
             g.clear();
-            LeaderboardButton.erase(g);
+            leaderboardButton.erase(g);
             pauseButton.draw(g);
             writePause(45, 65, 8, g);
+            startButton.setIsClickable(false);
+            creditsButton.setIsClickable(false);
+            leaderboardButton.setIsClickable(false);
+            optionButton.setIsClickable(false);
         }
-        if (creditsButton.isClicked(x)) {
+        if (creditsButton.isClicked(x) && creditsButton.isClickable()) {
             g.clear();
             writeCredits(130, 130, 5, g);
             backButton.draw(g);
             writeBack(45, 65, 3, g);
+//            startButton.removeFromScreen();
+            startButton.setIsClickable(false);
+            creditsButton.setIsClickable(false);
+            leaderboardButton.setIsClickable(false);
+            optionButton.setIsClickable(false);
+
         }
-        if(LeaderboardButton.isClicked(x)){
+        if(leaderboardButton.isClicked(x) && leaderboardButton.isClickable()){
             g.clear();
             writeLeaderboard(270, 80, 6, g);
             backButton.draw(g);
             writeBack(45, 65, 3, g);
+            startButton.setIsClickable(false);
+            creditsButton.setIsClickable(false);
+            leaderboardButton.setIsClickable(false);
+            optionButton.setIsClickable(false);
         }
-        if(optionButton.isClicked(x)){
+        if(optionButton.isClicked(x) && leaderboardButton.isClickable()){
             g.clear();
             writeOptions(100, 270, 5, g);
             backButton.draw(g);
@@ -78,6 +98,11 @@ int main(int argc, char ** argv) {
             drawCircle({900, 490}, 20, {255, 0, 255}, g); // purple
             musicButton.draw(g);
             soundButton.draw(g);
+            startButton.setIsClickable(false);
+            creditsButton.setIsClickable(false);
+            leaderboardButton.setIsClickable(false);
+            optionButton.setIsClickable(false);
+            g.update();
 
         }
         g.update();
@@ -91,4 +116,6 @@ int main(int argc, char ** argv) {
 
     return 0;
 }
+
+
 

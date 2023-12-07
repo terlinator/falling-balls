@@ -17,6 +17,7 @@ Date Last Modified: 12/6/23
 class button{
 private:
     int x, y, width, height;
+    bool clickable;
 
 public:
     button();
@@ -24,6 +25,9 @@ public:
     bool isClicked(point);
     void draw(SDL_Plotter&) const;
     void erase(SDL_Plotter&);
+    void setIsClickable(bool);
+    bool isClickable();
+    void removeFromScreen();
 };
 
 #endif //GROUPPROJECT_BUTTON_H

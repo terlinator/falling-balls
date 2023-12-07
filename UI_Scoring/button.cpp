@@ -11,6 +11,7 @@ Date Last Modified: 12/6/23
 
 button::button(){
     x = y = width = height = 0;
+    clickable = true;
 }
 
 
@@ -19,6 +20,7 @@ button::button(int x, int y, int width, int height){
     this->y = y;
     this->width = width;
     this->height = height;
+    clickable = true;
 }
 bool button::isClicked(point p){
     cout << p.x << " " << p.y << endl;
@@ -36,6 +38,11 @@ void button::draw(SDL_Plotter& g) const {
     }
 }
 
+void button::removeFromScreen(){
+    x = y = width = height = 0;
+    clickable = false;
+}
+
 
 void button::erase(SDL_Plotter& g){
     for (int i = x; i < x + width; i++) {
@@ -44,3 +51,12 @@ void button::erase(SDL_Plotter& g){
         }
     }
 }
+
+void button::setIsClickable(bool clickable){
+    this->clickable = clickable;
+
+}
+bool button::isClickable(){
+    return clickable;
+}
+

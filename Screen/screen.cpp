@@ -18,16 +18,16 @@ void drawCircle(point loc, int size, color c, SDL_Plotter& g){
     }
 }
 
-//void drawRectangle(point loc, int size, color c, SDL_Plotter &g, int i, int i1, int i2, SDL_Plotter plotter) {
-//    for(double i = -size; i <= size;i+=0.1){
-//        for(double j = -size; j <= size; j+=0.1){
-//            if(i+i + j+j <= size*size){
-//                g.plotPixel(round(loc.x+i),round (loc.y+j),c);
-//            }
-//        }
-//    }
-//
-//}
+void drawRectangle(point loc, int size, color c, SDL_Plotter &g) {
+    for(double i = -size; i <= size;i+=0.1){
+        for(double j = -size; j <= size; j+=0.1){
+            if(i+i + j+j <= size*size){
+                g.plotPixel(round(loc.x+i),round (loc.y+j),c);
+            }
+        }
+    }
+
+}
 
 void drawTriangle(point loc, int size, color c, SDL_Plotter& g){
     for(double i = -size; i <= size;i+=0.01){
@@ -69,7 +69,7 @@ void drawStartScreen(SDL_Plotter& g) {
         }
     }
     drawCircle({850, 800}, 50, {255, 0, 0}, g); // red
-//    drawRectangle({500, 800}, 50, {255, 0, 0}, g, 0, 0, 0, SDL_Plotter());
+    drawRectangle({500, 800}, 50, {255, 0, 0}, g);
     drawCircle({150, 800}, 50, {255, 0, 0}, g);
     // drawCircle({850, 800}, 50, {255, 0, 0}, g); // red
     g.update();
